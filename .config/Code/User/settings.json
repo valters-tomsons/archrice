@@ -41,4 +41,6 @@
     "explorer.confirmDragAndDrop": false,
     "workbench.startupEditor": "newUntitledFile",
     "terminal.integrated.rendererType": "dom",
+    "csharp.format.enable": false,
+    "editor.fontFamily": "'Roboto Mono', 'monospace', monospace, 'Droid Sans Fallback'",
 }
