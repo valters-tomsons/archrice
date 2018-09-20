@@ -211,6 +211,7 @@
 
 # Assign all games to workspace $gamews
 # Also apply game specific settings
+	assign [class="retroarch"] $ws5
 	assign [class="Vmplayer"] $ws5
 	assign [class="csgo_linux64"] $ws5
 	assign [class="dota2"] $ws5
