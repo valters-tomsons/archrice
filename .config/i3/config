@@ -201,6 +201,7 @@
 	assign [class="Mailspring"] $ws7
 	assign [class="Gnome-control-center"] $ws7
 	assign [class="Blueberry.py"] $ws7
+	assign [class="deepin-system-monitor"] $ws7
 
 	assign [class="Lutris"] $ws8
 	assign [class="Steam"] $ws8
@@ -219,6 +220,7 @@
 	assign [class="PCSX2"] $ws5
 		for_window [class="PCSX2"] floating enable
 	assign [class="net-minecraft-bootstrap-Bootstrap"] $ws5
+	assign [class="EtG.x86_64"] $ws5
 
 	#Wine	
 	for_window [instance="origin.exe"] floating enable
@@ -233,7 +235,7 @@
 	exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # Display compositor for transparency (use compton-git!!!)
-	exec --no-startup-id compton --config ~/.config/compton.conf
+	exec_always --no-startup-id compton --config ~/.config/compton.conf
 
 # Disable screensaver
 	exec --no-startup-id xset s off
@@ -241,8 +243,8 @@
 
 # Autorun
 	exec --no-startup-id discord-canary --start-minimized
-	exec --no-startup-id MellowPlayer
-	exec --no-startup-id steam-native -silent
+	#exec --no-startup-id MellowPlayer
+	exec --no-startup-id steam-runtime -silent
 	exec --no-startup-id mailspring --background
 	exec --no-startup-id qbittorrent
 	exec --no-startup-id blueberry-tray
