@@ -7,3 +7,8 @@ settings:
     global:
       normal:
         <Ctrl+q>: null
+  url.searchengines:
+    global:
+      DEFAULT: https://duckduckgo.com/?q={}
+      yt: https://youtube.com/results?search_query={} 
+
