@@ -11,4 +11,4 @@ settings:
     global:
       DEFAULT: https://duckduckgo.com/?q={}
       yt: https://youtube.com/results?search_query={} 
-
+      arch: https://wiki.archlinux.org/index.php/{}
