@@ -12,3 +12,4 @@ settings:
       DEFAULT: https://duckduckgo.com/?q={}
       yt: https://youtube.com/results?search_query={} 
       arch: https://wiki.archlinux.org/index.php/{}
+      1a: https://www.1a.lv/search/{}
