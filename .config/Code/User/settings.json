@@ -43,4 +43,5 @@
     "terminal.integrated.rendererType": "dom",
     "csharp.format.enable": false,
     "editor.fontFamily": "'Roboto Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "csharpfixformat.style.braces.onSameLine": false,
 }
