@@ -44,4 +44,6 @@
     "csharp.format.enable": false,
     "editor.fontFamily": "'Roboto Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "csharpfixformat.style.braces.onSameLine": false,
+    "csharpfixformat.style.newline.elseCatch": true,
+    "csharpfixformat.style.spaces.beforeParenthesis": false,
 }

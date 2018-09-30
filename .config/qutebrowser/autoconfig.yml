@@ -13,3 +13,5 @@ settings:
       yt: https://youtube.com/results?search_query={} 
       arch: https://wiki.archlinux.org/index.php/{}
       1a: https://www.1a.lv/search/{}
+      gl: https://google.com/search?hl=en&q={}
+      rd: https://reddit.com/r/{}
