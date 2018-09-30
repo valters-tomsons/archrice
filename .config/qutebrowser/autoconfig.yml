@@ -15,3 +15,4 @@ settings:
       1a: https://www.1a.lv/search/{}
       gl: https://google.com/search?hl=en&q={}
       rd: https://reddit.com/r/{}
+      fano: https://www.fano.in/browse_old.php?search={}
