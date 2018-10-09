@@ -227,6 +227,8 @@
 	for_window [instance="bfvob.exe"] fullscreen enable
 	assign [class="Wine"] $ws5
 		
+# Additional Software properties
+	for_window [class="Gnome-calculator"] floating enable
 
 # Set up wallpapers
 	exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpaper_i3/Primary.png --bg-scale ~/Pictures/Wallpaper_i3/Secondary.png
