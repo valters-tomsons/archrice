@@ -8,6 +8,8 @@ settings:
       normal:
         <Ctrl+f>: set-cmd-text -s :search
         <Ctrl+q>: null
+  content.proxy:
+    global: system
   url.searchengines:
     global:
       1a: https://www.1a.lv/search/{}

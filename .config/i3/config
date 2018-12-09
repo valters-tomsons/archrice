@@ -4,6 +4,12 @@
 # Set up monitor layout
 	exec --no-startup-id fixmonitors
 
+# Set up wallpapers
+	exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpaper_i3/Primary.png --bg-fill ~/Pictures/Wallpaper_i3/Secondary.png
+
+# [re]start polybar
+	exec_always --no-startup-id ~/.config/polybar/launch.sh
+
 # Names for default workspaces
 	set $ws1 "1: Web"
 	set $ws2 "2: Dev"
@@ -199,6 +205,7 @@
 	assign [class="qutebrowser"] $ws1
 	assign [class="Code"] $ws2 #vscode
 	assign [class="Nautilus"] $ws3
+	assign [class="mpv"] $ws4
 
 	assign [class="qBittorrent"] $ws7
 	assign [class="Mailspring"] $ws7
@@ -236,12 +243,6 @@
 # Additional Software properties
 	for_window [class="Gnome-calculator"] floating enable
 
-# Set up wallpapers
-	exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpaper_i3/Primary.png --bg-scale ~/Pictures/Wallpaper_i3/Secondary.png
-
-# [re]start polybar
-	exec_always --no-startup-id ~/.config/polybar/launch.sh
-
 # Display compositor for transparency (use compton-git!!!)
 	exec_always --no-startup-id compton --config ~/.config/compton.conf
 
@@ -251,8 +252,8 @@
 
 # Autorun
 	exec --no-startup-id discord-canary --start-minimized
-	#exec --no-startup-id MellowPlayer
 	exec --no-startup-id steam-runtime -silent
 	exec --no-startup-id mailspring --background
 	exec --no-startup-id qbittorrent
 	exec --no-startup-id blueberry-tray
+	exec --no-startup-id dynperf

@@ -17,10 +17,13 @@
         "notificationLink.foreground": "#FF4081",
         "editorWidget.resizeBorder": "#FF4081",
         "editorWidget.border": "#FF4081",
-        "settings.modifiedItemForeground": "#FF4081",
-        "panelTitle.activeBorder": "#FF4081"
+        "panelTitle.activeBorder": "#FF4081",
+        "settings.modifiedItemIndicator": "#FF4081",
+        "settings.headerForeground": "#FF4081",
+        "breadcrumb.activeSelectionForeground": "#FF4081",
+        "menu.selectionForeground": "#FF4081",
+        "menubar.selectionForeground": "#FF4081"
     },
-    "materialTheme.accent": "Pink",
     "materialTheme.autoApplyIcons": true,
     "gitlens.advanced.messages": {
         "suppressShowKeyBindingsNotice": true
@@ -46,4 +49,15 @@
     "csharpfixformat.style.braces.onSameLine": false,
     "csharpfixformat.style.newline.elseCatch": true,
     "csharpfixformat.style.spaces.beforeParenthesis": false,
+    "files.exclude": {
+        "**/.vscode": true,
+        "**/bin": true,
+        "**/obj": true
+    },
+    "vim.useCtrlKeys": false,
+    "omnisharp.useGlobalMono": "never",
+    "materialTheme.accent": "Pink",
+    "breadcrumbs.enabled": true,
+    "gitlens.views.fileHistory.enabled": false,
+    "gitlens.views.lineHistory.enabled": false,
 }
