@@ -218,7 +218,7 @@
 	assign [instance="origin.exe"] $ws8
 
 	assign [class="discord"] $ws9
-	assign [class="MellowPlayer"] $ws10
+	assign [class="Spotify"] $ws10
 
 # Assign all games to workspace $gamews
 # Also apply game specific settings
@@ -242,6 +242,8 @@
 		
 # Additional Software properties
 	for_window [class="Gnome-calculator"] floating enable
+	for_window [class="Code"] fullscreen enable
+	assign [class="Dotnet"] $ws6
 
 # Display compositor for transparency (use compton-git!!!)
 	exec_always --no-startup-id compton --config ~/.config/compton.conf
@@ -252,7 +254,7 @@
 
 # Autorun
 	exec --no-startup-id discord-canary --start-minimized
-	exec --no-startup-id steam-runtime -silent
+	exec --no-startup-id steam-native -silent
 	exec --no-startup-id mailspring --background
 	exec --no-startup-id qbittorrent
 	exec --no-startup-id blueberry-tray
