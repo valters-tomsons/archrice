@@ -242,7 +242,6 @@
 		
 # Additional Software properties
 	for_window [class="Gnome-calculator"] floating enable
-	for_window [class="Code"] fullscreen enable
 	assign [class="Dotnet"] $ws6
 
 # Display compositor for transparency (use compton-git!!!)
