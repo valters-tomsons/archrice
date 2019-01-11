@@ -178,7 +178,7 @@
 #Force edge borders
 	#new_window pixel 1
 	#new_float pixel 1
-	for_window [class="^.*"] border pixel 0
+	for_window [class="^.*"] border pixel 2
 
 #Bar 
 	
@@ -196,8 +196,8 @@
 	#}
 
 # Gaps
-	gaps inner 3 
-	gaps outer 5
+	gaps inner 5 
+	gaps outer 4
 
 # Assign software to workspaces
 # xprop (WM_CLASS)[1] 
