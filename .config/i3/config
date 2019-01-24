@@ -90,8 +90,11 @@
 # kill focused window
 	bindsym Mod4+Shift+q kill
 
-# start rofi launcher
+# start rofi application launcher
 	bindsym Mod4+d exec rofi -show run -config ~/.config/i3/rofi.conf
+
+# start rofi lastpass
+	bindsym Mod4+p exec rofi -modi lpass:~/Source/rofi-lpass/rofi-lpass -show lpass -config ~/.config/i3/rofi.conf
 
 # change focus:
 	bindsym Mod4+Left focus left
