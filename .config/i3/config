@@ -108,31 +108,19 @@
 	bindsym Mod4+Shift+Up move up
 	bindsym Mod4+Shift+Right move right
 
-# split in horizontal orientation
+# split in orientation
 	bindsym Mod4+h split h
-
-# split in vertical orientation
 	bindsym Mod4+v split v
 
-# enter fullscreen mode for the focused container
+# enter fullscreen
 	bindsym Mod4+f fullscreen toggle
 
-# change container layout (stacked, tabbed, toggle split)
-	bindsym Mod4+s layout stacking
+# change layout 
 	bindsym Mod4+w layout tabbed
 	bindsym Mod4+e layout toggle split
 
 # toggle tiling / floating
 	bindsym Mod4+Shift+space floating toggle
-
-# change focus between tiling / floating windows
-	bindsym Mod4+space focus mode_toggle
-
-# focus the parent container
-	bindsym Mod4+a focus parent
-
-# focus the child container
-	#bindsym Mod4+d focus child
 
 # move the currently focused window to the scratchpad
 	bindsym Mod4+Shift+minus move scratchpad
