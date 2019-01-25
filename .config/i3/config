@@ -122,13 +122,6 @@
 # toggle tiling / floating
 	bindsym Mod4+Shift+space floating toggle
 
-# move the currently focused window to the scratchpad
-	bindsym Mod4+Shift+minus move scratchpad
-
-# Show the next scratchpad window or hide the focused scratchpad window.
-# If there are multiple scratchpad windows, this command cycles through them.
-	bindsym Mod4+minus scratchpad show
-
 # reload the configuration file
 	bindsym Mod4+Shift+c reload
 
@@ -137,6 +130,7 @@
 
 # exit i3 (logs you out of your X session)
 	bindsym Mod4+Shift+e exec "i3-nagbar -t warning -m ' ' -b '     Exit i3      ' 'i3-msg exit'"
+
 # Resize Mode
 	bindsym Mod4+r mode "resize"
 	mode "resize" {
@@ -159,32 +153,8 @@
 # Bind gnome sound controller
 	bindsym --release Mod4+F9 exec "env XDG_CURRENT_DESKTOP=GNOME gnome-control-center"
 
-# Bar Colors
-	set $bar-bg-color #2f343f
-	set $bar-inactive-bg-color #2f343f
-	set $bar-text-color #f3f4f5
-	set $bar-inactive-text-color #676E7D
-	set $bar-urgent-bg-color #E53935
-
 #Force edge borders
-	#new_window pixel 1
-	#new_float pixel 1
 	for_window [class="^.*"] border pixel 2
-
-#Bar 
-	
-	#bar {
-	#	position top
-	#colors {
-	#	background $bar-bg-color
-	#    separator #757575
-	#
-	#	#                  border             	  background             text
-	#	focused_workspace  $bar-bg-color          $bar-bg-color          $bar-text-color
-	#	inactive_workspace $bar-inactive-bg-color $bar-inactive-bg-color $bar-inactive-text-color
-	#	urgent_workspace   $bar-urgent-bg-color   $bar-urgent-bg-color   $bar-text-color
-	#}
-	#}
 
 # Gaps
 	gaps inner 5 
