@@ -93,8 +93,8 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 
 modules-left = i3
-modules-center = 
-modules-right = cpu memory pulseaudio date
+modules-center = date 
+modules-right = cpu memory pulseaudio
 
 tray-position = right
 tray-padding = 5
@@ -288,10 +288,10 @@ type = internal/date
 interval = 5
 
 date =
-date-alt = " %Y-%m-%d"
+date-alt = "%m / %d"
 
 time = %H:%M
-time-alt = %H:%M:%S
+time-alt = %H:%M
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
