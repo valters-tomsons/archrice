@@ -91,10 +91,11 @@
 	bindsym Mod4+Shift+q kill
 
 # start rofi application launcher
-	bindsym Mod4+d exec rofi -show run -config ~/.config/rofi/rofi_full.conf
+	bindsym Mod4+d exec rofi -show run -config ~/.config/rofi/rofi_full.conf 
 
 # start rofi lastpass
-	bindsym Mod4+p exec rofi -modi lpass:~/Source/rofi-lpass/rofi-lpass -show lpass -config ~/.config/rofi/rofi_full.conf
+	bindsym Mod4+p exec rofi -modi lpass:~/Source/rofi-lpass/rofi-lpass -show lpass -theme ~/.config/rofi/themes/purple.rasi
+
 
 # change focus:
 	bindsym Mod4+Left focus left
