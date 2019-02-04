@@ -89,8 +89,8 @@ module-margin-left = 1
 module-margin-right = 2
 
 font-0 = Roboto-Light:pixelsize=10;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10;1
+font-1 = WunconSiji
+font-2 = NotoSansMono
 
 modules-left = i3
 modules-center = date 
