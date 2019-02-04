@@ -94,7 +94,7 @@ font-2 = siji:pixelsize=10;1
 
 modules-left = i3
 modules-center = date 
-modules-right = cpu memory pulseaudio
+modules-right = pulseaudio cpu memory
 
 tray-position = right
 tray-padding = 5
