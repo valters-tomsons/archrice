@@ -441,6 +441,8 @@ type = custom/script
 
 exec = /home/faith/Source/controllerbattery/bin/Release/netcoreapp2.2/linux-x64/publish/controllerbattery
 
+format-underline = #BF0077
+
 [settings]
 screenchange-reload = true
 ;compositing-background = xor
