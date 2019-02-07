@@ -60,4 +60,5 @@
     "breadcrumbs.enabled": true,
     "gitlens.views.fileHistory.enabled": false,
     "gitlens.views.lineHistory.enabled": false,
+    "razor.trace": "Messages",
 }
