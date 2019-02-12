@@ -174,7 +174,6 @@
 # Assign software to workspaces
 # xprop (WM_CLASS)[1] 
 	assign [class="Firefox"] $ws1
-	assign [class="qutebrowser"] $ws1
 	assign [class="Code"] $ws2 #vscode
 	assign [class="Nautilus"] $ws3
 	assign [class="mpv"] $ws4
