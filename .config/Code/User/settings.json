@@ -2,7 +2,7 @@
     "git.autofetch": true,
     "[csharp]": {},
     "workbench.colorTheme": "Material Theme Palenight High Contrast",
-    "workbench.iconTheme": "eq-material-theme-icons-palenight",
+    "workbench.iconTheme": "material-icon-theme",
     "workbench.colorCustomizations": {
         "activityBarBadge.background": "#FF4081",
         "list.activeSelectionForeground": "#FF4081",
