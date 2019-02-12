@@ -29,6 +29,11 @@
 # Audio Device ALSA index
 	set $audiodevice "alsa_output.pci-0000_00_14.2.analog-stereo"
 
+# Border Colors
+	set $focused_border "#EA005E"
+	set $focused_inactive_border "#767676"
+	set $unfocused_border "#767676"
+
 # $first monitor workspace binds
 	workspace $ws1 output $first
 	workspace $ws2 output $first
@@ -154,8 +159,13 @@
 # Bind gnome sound controller
 	bindsym --release Mod4+F9 exec "env XDG_CURRENT_DESKTOP=GNOME gnome-control-center"
 
-#Force edge borders
+# Force edge borders
 	for_window [class="^.*"] border pixel 2
+
+# Set Edge Border Colors
+	client.focused		#000000	#000000	#000000	$focused_border			$focused_border
+	client.focused_inactive #000000	#000000	#000000	$unfocused_inactive_border	$unfocused_inactive_border
+	client.unfocused	#000000	#000000	#000000	$unfocused_border		$unfocused_border
 
 # Gaps
 	gaps inner 5 
