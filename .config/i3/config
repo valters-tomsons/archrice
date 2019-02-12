@@ -160,7 +160,7 @@
 	bindsym --release Mod4+F9 exec "env XDG_CURRENT_DESKTOP=GNOME gnome-control-center"
 
 # Force edge borders
-	for_window [class="^.*"] border pixel 2
+	for_window [class="^.*"] border pixel 1
 
 # Set Edge Border Colors
 	client.focused		#000000	#000000	#000000	$focused_border			$focused_border
