@@ -30,9 +30,9 @@
 	set $audiodevice "alsa_output.pci-0000_00_14.2.analog-stereo"
 
 # Border Colors
-	set $focused_border "#EA005E"
-	set $focused_inactive_border "#767676"
-	set $unfocused_border "#767676"
+	set $focused_border		 "#E80C88"
+	set $focused_inactive_border	 "#767676"
+	set $unfocused_border		 "#767676"
 
 # $first monitor workspace binds
 	workspace $ws1 output $first
