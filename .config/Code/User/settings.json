@@ -61,4 +61,5 @@
     "gitlens.views.fileHistory.enabled": false,
     "gitlens.views.lineHistory.enabled": false,
     "razor.trace": "Verbose",
+    "editor.renderWhitespace": "all",
 }

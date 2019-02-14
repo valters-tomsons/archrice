@@ -92,7 +92,7 @@ font-2 = NotoSansMono
 font-3 = NotoSansSymbols2-Regular:pixelsize=10;1
 
 modules-left = i3
-modules-center = date controllerbattery 
+modules-center = polytemps date controllerbattery 
 modules-right = pulseaudio cpu memory
 
 tray-position = right
@@ -442,6 +442,11 @@ exec = /home/faith/Source/controllerbattery/bin/Release/netcoreapp2.2/linux-x64/
 format-underline = #BF0077
 
 click-right = bt-device -d "Wireless Controller"
+
+[module/polytemps]
+type = custom/script
+exec = /home/faith/Source/polybar-sensors/bin/Release/netcoreapp2.2/linux-x64/publish/polybar-sensors
+format-underline = #0063B1
 
 [settings]
 screenchange-reload = true
