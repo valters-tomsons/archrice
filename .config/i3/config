@@ -178,6 +178,8 @@
 	assign [class="Nautilus"] $ws3
 	assign [class="mpv"] $ws4
 
+	assign [class="steam"] $ws5
+
 	assign [class="qBittorrent"] $ws7
 	assign [class="Mailspring"] $ws7
 	assign [class="Gnome-control-center"] $ws7
@@ -213,6 +215,7 @@
 		
 # Additional Software properties
 	for_window [class="Gnome-calculator"] floating enable
+	for_window [class="dotnet"] floating enable
 	assign [class="Dotnet"] $ws6
 
 # Display compositor for transparency (use compton-git!!!)
