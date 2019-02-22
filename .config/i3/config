@@ -29,10 +29,16 @@
 # Audio Device ALSA index
 	set $audiodevice "alsa_output.pci-0000_00_14.2.analog-stereo"
 
-# Border Colors
+# Client Colors
 	set $focused_border		 "#E80C88"
 	set $focused_inactive_border	 "#767676"
 	set $unfocused_border		 "#767676"
+
+	set $focused_element		 "#E80C88"
+	set $unfocused_element		 "#4C4A48"
+
+	set $focused_background		 "#C30052"
+	set $unfocused_background	 "#4C4A48"
 
 # $first monitor workspace binds
 	workspace $ws1 output $first
@@ -163,9 +169,9 @@
 	for_window [class="^.*"] border pixel 1
 
 # Set Edge Border Colors
-	client.focused		#000000	#000000	#000000	$focused_border			$focused_border
-	client.focused_inactive #000000	#000000	#000000	$unfocused_inactive_border	$unfocused_inactive_border
-	client.unfocused	#000000	#000000	#000000	$unfocused_border		$unfocused_border
+	client.focused		$focused_element	$focused_background	#000000	$focused_border			$focused_border
+	client.focused_inactive $unfocused_element	$unfocused_background	#000000	$unfocused_inactive_border	$unfocused_inactive_border
+	client.unfocused	$unfocused_element	$unfocused_background	#000000	$unfocused_border		$unfocused_border
 
 # Gaps
 	gaps inner 5 
