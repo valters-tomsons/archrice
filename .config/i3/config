@@ -186,6 +186,10 @@
 # exit i3 (logs you out of your X session)
 	bindsym Mod4+Shift+e exec "i3-nagbar -t warning -m ' ' -b '     Exit i3      ' 'i3-msg exit'"
 
+# Scroll workspaces
+	bindsym --whole-window Mod4+j workspace prev_on_output
+	bindsym --whole-window Mod4+k workspace next_on_output
+
 # Resize Mode
 	bindsym Mod4+r mode "resize"
 	mode "resize" {
