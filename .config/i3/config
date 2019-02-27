@@ -233,8 +233,8 @@
 
 	assign [class="steam"] $ws5
 
-	assign [class="qBittorrent"] $ws17
-	assign [class="Mailspring"] $ws17
+	assign [class="qBittorrent"] $ws15
+	assign [class="Mailspring"] $ws16
 	assign [class="Gnome-control-center"] $ws17
 	assign [class="Blueberry.py"] $ws17
 	assign [class="deepin-system-monitor"] $ws17
