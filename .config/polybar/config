@@ -103,6 +103,44 @@ tray-padding = 5
 cursor-click = pointer
 cursor-scroll = ns-resize
 
+[bar/bar-single]
+monitor = ${env:MONITOR:HDMI-A-0}
+width = 100%
+height = 20
+
+radius = 5
+fixed-center = true
+
+background = ${colors.background}
+background-trasparency = 1
+foreground = ${colors.foreground}
+
+line-size = 2
+line-color = #000
+
+border-size = 4
+border-color = #00000000
+
+padding-left = 0
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = Roboto:fontformat=truetype:pixelsize=10;1
+font-1 = Hasklig
+font-2 = WunconSiji
+
+modules-left = i3
+modules-center = date controllerbattery
+modules-right = pulseaudio cpu memory
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+tray-position = right
+tray-padding = 5
+
 [module/xwindow]
 type = internal/xwindow
 label = %title:0:30:...%

@@ -1,11 +1,10 @@
-# Terminate already running bar instances
-killall -q polybar
+#!/bin/bash
 
-# Wait until the processes have been shut down
-while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
-
-# Launch bar1 and bar2
-polybar bar1 &
-polybar bar2 &
-
-echo "Bars launched..."
+monitorOutput="$(xrandr --listactivemonitors | wc -l)"
+monitorCount=$((${monitorOutput}-1))
+echo "Monitor Count: ${monitorCount}"
+if (( $monitorCount == 1 )); then
+	~/.config/polybar/single-monitor.sh
+else
+	~/.config/polybar/multi-monitor.sh
+fi
