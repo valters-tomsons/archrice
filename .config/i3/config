@@ -122,7 +122,7 @@
 	bindsym Mod4+Shift+F7 move container to workspace $ws17
 	bindsym Mod4+Shift+F8 move container to workspace $ws18
 	bindsym Mod4+Shift+F9 move container to workspace $ws19
-	bindsym Mod4+Shift+ move container to workspace $ws20
+	bindsym Mod4+Shift+F10 move container to workspace $ws20
 
 # Audio Volume controls
 	bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $audiodevice +5%
