@@ -1,0 +1,1 @@
+python -m ds4drv --hidraw --udp --udp-remap-buttons
