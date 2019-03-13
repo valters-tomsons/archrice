@@ -1,0 +1,1 @@
+LD_PRELOAD=/usr/lib/libcurl.so.3:/home/faith/Source/spotifywm/spotifywm.so /usr/bin/spotify

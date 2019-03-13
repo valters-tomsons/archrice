@@ -49,6 +49,9 @@ filetype plugin on
 " Timeout in seconds to wait for a response from the server
 let g:OmniSharp_timeout = 5
 
+let g:OmniSharp_server_type = 'roslyn'
+let g:OmniSharp_prefer_global_sln = 1
+
 " Don't autoselect first omnicomplete option, show options even if there is only
 " one (so the preview documentation is accessible). Remove 'preview' if you
 " don't want to see any documentation whatsoever.
