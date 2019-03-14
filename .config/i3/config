@@ -256,6 +256,7 @@
 	assign [class="PCSX2"] $ws5
 		for_window [class="PCSX2"] floating enable
 	assign [class="net-minecraft-bootstrap-Bootstrap"] $ws5
+	assign [class="GameGuide"] $ws5
 
 	#Unity Games
 	assign [class="EtG.x86_64"] $ws5
