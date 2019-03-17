@@ -2,7 +2,7 @@
 # https://i3wm.org/docs/userguide.html for a complete reference!
 
 # Set up monitor layout
-	exec --no-startup-id fixmonitors
+	exec --no-startup-id /home/faith/.local/bin/fixmonitors
 
 # Set up wallpapers
 	exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpaper_i3/Primary.png --bg-fill ~/Pictures/Wallpaper_i3/Secondary.png
