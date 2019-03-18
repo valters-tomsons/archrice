@@ -258,6 +258,7 @@
 	assign [class="net-minecraft-bootstrap-Bootstrap"] $ws5
 	assign [class="GameGuide"] $ws5
 	assign [class="Civ6Sub"] $ws5
+	assign [class="RPCS3"] $ws5
 
 	#Unity Games
 	assign [class="EtG.x86_64"] $ws5
