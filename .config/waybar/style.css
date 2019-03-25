@@ -1,18 +1,16 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: Roboto, Hasklig, WunconSiji, sans-serif;
+    font-family: Roboto, sans-serif;
     font-size: 13px;
     min-height: 0;
 }
 
 window#waybar {
-    background: rgba(43, 48, 59, 0.5);
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    background: rgba(33, 33, 33, 0.55);
     color: #ffffff;
 }
 
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button {
     padding: 0 0;
     background: transparent;
@@ -30,25 +28,6 @@ window#waybar {
     border-bottom: 3px solid #ffffff;
 }
 
-#clock, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #custom-spotify, #tray, #mode, #idle_inhibitor {
-    padding: 0 10px;
-    margin: 0 5px;
-}
-
-#clock {
-    background-color: #64727D;
-}
-
-#battery {
-    background-color: #ffffff;
-    color: #000000;
-}
-
-#battery.charging {
-    color: #ffffff;
-    background-color: #26A65B;
-}
-
 @keyframes blink {
     to {
         background-color: #ffffff;
@@ -56,14 +35,14 @@ window#waybar {
     }
 }
 
-#battery.critical:not(.charging) {
-    background: #f53c3c;
-    color: #ffffff;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+#clock, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #custom-spotify, #tray, #mode, #idle_inhibitor {
+    padding: 0 10px;
+    margin: 0 5px;
+}
+
+#clock {
+    background-color: rgba(33,33,33, 0.5);
+    margin: 1px 5px;
 }
 
 #cpu {
@@ -73,18 +52,6 @@ window#waybar {
 
 #memory {
     background: #9b59b6;
-}
-
-#backlight {
-    background: #90b1b1;
-}
-
-#network {
-    background: #2980b9;
-}
-
-#network.disconnected {
-    background: #f53c3c;
 }
 
 #pulseaudio {
@@ -97,28 +64,6 @@ window#waybar {
     color: #2a5c45;
 }
 
-#custom-spotify {
-    background: #66cc99;
-    color: #2a5c45;
-}
-
-#temperature {
-    background: #f0932b;
-}
-
-#temperature.critical {
-    background: #eb4d4b;
-}
-
 #tray {
     background-color: #2980b9;
-}
-
-#idle_inhibitor {
-    background-color: #2d3436;
-}
-
-#idle_inhibitor.activated {
-    background-color: #ecf0f1;
-    color: #2d3436;
 }
