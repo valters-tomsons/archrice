@@ -7,15 +7,12 @@
 	output $second pos 0 0
 
 # Set wallpapers
-	output $primary background /home/faith/Pictures/System/Secondary.png fill
-	output $second background /home/faith/Pictures/System/Primary.png fill
+	output $primary background /home/faith/Pictures/System/Primary.png fill
+	output $second background /home/faith/Pictures/System/Secondary.png fill
 
-# [re]start polybar
-	exec_always --no-startup-id ~/.config/polybar/launch.sh
-
- bar {
-  status_command i3status
- }
+	bar {
+  		status_command i3status
+	}
 
 # Names for default workspaces
 	set $ws1 "1"
