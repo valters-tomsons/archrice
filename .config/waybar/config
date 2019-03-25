@@ -3,10 +3,14 @@
 {
     "layer": "top",
     "height": 25,
-    "modules-left": ["sway/workspaces", "sway/mode", "custom/spotify"],
+    "modules-left": ["sway/workspaces", "sway/mode"],
     "modules-center": [],
     "modules-right": ["pulseaudio", "cpu", "memory", "clock", "tray"],
 
+    "sway/workspaces": {
+	    "disable-scroll": true,
+	    "format": "{name}"
+    },
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
@@ -39,11 +43,5 @@
             "default": ["", ""]
         },
         "on-click": "pavucontrol"
-    },
-    "custom/spotify": {
-        "format": " {}",
-        "max-length": 40,
-        "escape": true,
-        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
     }
 }
