@@ -23,16 +23,16 @@
         "format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {
-        "format": "{usage}% "
+        "format": "CPU: {usage}%"
     },
     "memory": {
-        "format": "{}% "
+        "format": "MEM: {}%"
     },
     "pulseaudio": {
-        //"scroll-step": 1,
-        "format": "{volume}% {icon}",
+        "scroll-step": 8,
+        "format": "{icon} {volume}%",
         "format-bluetooth": "{volume}% {icon}",
-        "format-muted": "",
+        "format-muted": "🔇",
         "format-icons": {
             "headphones": "",
             "handsfree": "",
@@ -40,7 +40,7 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", ""]
+            "default": ["🔉", "🔉"]
         },
         "on-click": "env XDG_CURRENT_DESKTOP=GNOME gnome-control-center"
     }
