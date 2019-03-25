@@ -2,7 +2,7 @@
 
 {
     "layer": "top",
-    "height": 25,
+    "height": 22,
     "modules-left": ["sway/workspaces", "sway/mode"],
     "modules-center": [],
     "modules-right": ["cpu", "memory", "pulseaudio", "clock", "tray"],
@@ -31,15 +31,8 @@
     "pulseaudio": {
         "scroll-step": 8,
         "format": "{icon} {volume}%",
-        "format-bluetooth": "{volume}% {icon}",
         "format-muted": "🔇",
         "format-icons": {
-            "headphones": "",
-            "handsfree": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
             "default": ["🔉", "🔉"]
         },
         "on-click": "env XDG_CURRENT_DESKTOP=GNOME gnome-control-center"
