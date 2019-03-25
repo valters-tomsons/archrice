@@ -1,0 +1,292 @@
+# Names for attached monitors
+	set $primary "Goldstar Company Ltd LG IPS FULLHD 0x00000101"
+	set $second "Samsung Electric Company SyncMaster H9LQ110562"
+
+# Set Monitor positions
+	output $primary pos 1280 0
+	output $second pos 0 0
+
+# Set wallpapers
+	output $primary background /home/faith/Pictures/System/Secondary.png fill
+	output $second background /home/faith/Pictures/System/Primary.png fill
+
+# [re]start polybar
+	exec_always --no-startup-id ~/.config/polybar/launch.sh
+
+ bar {
+  status_command i3status
+ }
+
+# Names for default workspaces
+	set $ws1 "1"
+	set $ws2 "2"
+	set $ws3 "3"
+	set $ws4 "4"
+	set $ws5 "5"
+	set $ws6 "6"
+	set $ws7 "7"
+	set $ws8 "8"
+	set $ws9 "9"
+	set $ws10 "10"
+
+	set $ws11 "11:F1"
+	set $ws12 "12:F2"
+	set $ws13 "13:F3"
+	set $ws14 "14:F4"
+	set $ws15 "15:F5"
+	set $ws16 "16:F6"
+	set $ws17 "17:F7"
+	set $ws18 "18:F8"
+	set $ws19 "19:F9"
+	set $ws20 "20:F10"
+
+
+# Audio Device ALSA index
+	set $audiodevice "alsa_output.pci-0000_00_14.2.analog-stereo"
+
+# Client Colors
+	set $focused_border		 "#E80C88"
+	set $focused_inactive_border	 "#767676"
+	set $unfocused_border		 "#767676"
+
+	set $focused_element		 "#E80C88"
+	set $unfocused_element		 "#4C4A48"
+
+	set $focused_background		 "#C30052"
+	set $unfocused_background	 "#4C4A48"
+
+# $primary monitor workspace binds
+	workspace $ws1 output $primary
+	workspace $ws2 output $primary
+	workspace $ws3 output $primary
+	workspace $ws4 output $primary
+	workspace $ws5 output $primary
+	workspace $ws6 output $primary
+	workspace $ws7 output $primary
+	workspace $ws8 output $primary
+	workspace $ws9 output $primary
+	workspace $ws10 output $primary
+
+# $second monitor workspace binds
+	workspace $ws11 output $second
+	workspace $ws12 output $second
+	workspace $ws13 output $second
+	workspace $ws14 output $second
+	workspace $ws15 output $second
+	workspace $ws16 output $second
+	workspace $ws17 output $second
+	workspace $ws18 output $second
+	workspace $ws19 output $second
+	workspace $ws20 output $second
+
+# Font for window titles
+	font pango:Roboto Regular 9
+
+# switch to workspace
+	bindsym Mod4+1 workspace $ws1
+	bindsym Mod4+2 workspace $ws2
+	bindsym Mod4+3 workspace $ws3
+	bindsym Mod4+4 workspace $ws4
+	bindsym Mod4+5 workspace $ws5
+	bindsym Mod4+6 workspace $ws6
+	bindsym Mod4+7 workspace $ws7
+	bindsym Mod4+8 workspace $ws8
+	bindsym Mod4+9 workspace $ws9
+	bindsym Mod4+0 workspace $ws10
+
+	bindsym Mod4+F1 workspace $ws11
+	bindsym Mod4+F2 workspace $ws12
+	bindsym Mod4+F3 workspace $ws13
+	bindsym Mod4+F4 workspace $ws14
+	bindsym Mod4+F5 workspace $ws15
+	bindsym Mod4+F6 workspace $ws16
+	bindsym Mod4+F7 workspace $ws17
+	bindsym Mod4+F8 workspace $ws18
+	bindsym Mod4+F9 workspace $ws19
+	bindsym Mod4+F10 workspace $ws20
+
+# move focused container to workspace
+	bindsym Mod4+Shift+1 move container to workspace $ws1
+	bindsym Mod4+Shift+2 move container to workspace $ws2
+	bindsym Mod4+Shift+3 move container to workspace $ws3
+	bindsym Mod4+Shift+4 move container to workspace $ws4
+	bindsym Mod4+Shift+5 move container to workspace $ws5
+	bindsym Mod4+Shift+6 move container to workspace $ws6
+	bindsym Mod4+Shift+7 move container to workspace $ws7
+	bindsym Mod4+Shift+8 move container to workspace $ws8
+	bindsym Mod4+Shift+9 move container to workspace $ws9
+	bindsym Mod4+Shift+0 move container to workspace $ws10
+
+	bindsym Mod4+Shift+F1 move container to workspace $ws11
+	bindsym Mod4+Shift+F2 move container to workspace $ws12
+	bindsym Mod4+Shift+F3 move container to workspace $ws13
+	bindsym Mod4+Shift+F4 move container to workspace $ws14
+	bindsym Mod4+Shift+F5 move container to workspace $ws15
+	bindsym Mod4+Shift+F6 move container to workspace $ws16
+	bindsym Mod4+Shift+F7 move container to workspace $ws17
+	bindsym Mod4+Shift+F8 move container to workspace $ws18
+	bindsym Mod4+Shift+F9 move container to workspace $ws19
+	bindsym Mod4+Shift+F10 move container to workspace $ws20
+
+# Audio Volume controls
+	bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $audiodevice +5%
+	bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume $audiodevice -5%
+	bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute $audiodevice toggle
+
+# Media player controls
+	bindsym XF86AudioPlay exec playerctl play
+	bindsym XF86AudioStop exec playerctl pause
+	bindsym XF86AudioNext exec playerctl next
+	bindsym XF86AudioPrev exec playerctl previous
+
+# use Mouse+Mod4 to drag floating windows to their wanted position
+	floating_modifier Mod4
+
+# start a terminal
+	bindsym Mod4+Return exec st -f "Roboto Mono:size=12" 
+
+# kill focused window
+	bindsym Mod4+Shift+q kill
+
+# start rofi application launcher
+	bindsym Mod4+d exec rofi -show run -config ~/.config/rofi/rofi_full.conf 
+
+# start rofi lastpass
+	bindsym Mod4+p exec rofi -modi lpass:~/Source/rofi-lpass/rofi-lpass -show lpass -theme ~/.config/rofi/themes/purple.rasi
+
+# change focus:
+	bindsym Mod4+Left focus left
+	bindsym Mod4+Down focus down
+	bindsym Mod4+Up focus up
+	bindsym Mod4+Right focus right
+
+# move focused window
+	bindsym Mod4+Shift+Left move left
+	bindsym Mod4+Shift+Down move down
+	bindsym Mod4+Shift+Up move up
+	bindsym Mod4+Shift+Right move right
+
+# split in orientation
+	bindsym Mod4+h split h
+	bindsym Mod4+v split v
+
+# enter fullscreen
+	bindsym Mod4+f fullscreen toggle
+
+# change layout 
+	bindsym Mod4+w layout tabbed
+	bindsym Mod4+e layout toggle split
+
+# toggle tiling / floating
+	bindsym Mod4+Shift+space floating toggle
+
+# reload the configuration file
+	bindsym Mod4+Shift+c reload
+
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+	bindsym Mod4+Shift+r restart
+
+# exit i3 (logs you out of your X session)
+	bindsym Mod4+Shift+e exec "i3-nagbar -t warning -m ' ' -b '     Exit i3      ' 'i3-msg exit'"
+
+# Scroll workspaces
+#	bindsym --whole-window Mod4+J workspace prev_on_output
+#	bindsym --whole-window Mod4+K workspace next_on_output
+
+# Resize Mode
+	bindsym Mod4+r mode "resize"
+	mode "resize" {
+	# Pressing right will grow the window’s width.
+	# Pressing up will grow the window’s height.
+	bindsym Left        resize shrink width 10 px or 10 ppt
+	bindsym Up        resize grow height 10 px or 10 ppt
+	bindsym Down          resize shrink height 10 px or 10 ppt
+	bindsym Right       resize grow width 10 px or 10 ppt
+
+	# back to normal: Enter or Escape or Mod4+r
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+	bindsym Mod4+r mode "default" 
+	}
+
+# Bind Screenshot snipping tool
+	bindsym --release Print exec gnome-screenshot -i
+
+# Bind gnome sound controller
+	bindsym --release Mod4+F11 exec "env XDG_CURRENT_DESKTOP=GNOME gnome-control-center"
+
+# Force edge borders
+	for_window [class="^.*"] border pixel 1
+
+# Set Edge Border Colors
+	client.focused		$focused_element	$focused_background	#000000	$focused_border			$focused_border
+	client.focused_inactive $unfocused_element	$unfocused_background	#000000	$focused_inactive_border	$focused_inactive_border
+	client.unfocused	$unfocused_element	$unfocused_background	#000000	$unfocused_border		$unfocused_border
+
+# Gaps
+	gaps inner 5 
+	gaps outer 4
+
+# Assign software to workspaces
+# xprop (WM_CLASS)[1] 
+	assign [class="Firefox"] $ws1
+	assign [class="Code"] $ws2 #vscode
+	assign [class="Nautilus"] $ws3
+	assign [class="mpv"] $ws4
+
+	assign [class="steam"] $ws5
+
+	assign [class="qBittorrent"] $ws15
+	assign [class="Mailspring"] $ws16
+	assign [class="Gnome-control-center"] $ws17
+	assign [class="Blueberry.py"] $ws17
+	assign [class="deepin-system-monitor"] $ws17
+
+	assign [class="Lutris"] $ws18
+	assign [class="Steam"] $ws18
+	assign [instance="origin.exe"] $ws18
+
+	assign [class="discord"] $ws19
+	assign [class="Spotify"] $ws20
+
+# Assign all games to workspace $gamews
+# Also apply game specific settings
+	assign [class="retroarch"] $ws5
+	assign [class="Vmplayer"] $ws5
+	assign [class="csgo_linux64"] $ws5
+	assign [class="dota2"] $ws5
+		for_window [class="dota2"] fullscreen enable
+	assign [class="PCSX2"] $ws5
+		for_window [class="PCSX2"] floating enable
+	assign [class="net-minecraft-bootstrap-Bootstrap"] $ws5
+	assign [class="GameGuide"] $ws5
+	assign [class="Civ6Sub"] $ws5
+	assign [class="RPCS3"] $ws5
+
+	#Unity Games
+	assign [class="EtG.x86_64"] $ws5
+	assign [class="Clustertruck.x86_64"] $ws5
+
+	#Wine	
+	for_window [instance="origin.exe"] floating enable
+	for_window [instance="bfvob.exe"] fullscreen enable
+	assign [class="Wine"] $ws5
+		
+# Additional Software properties
+	for_window [class="Gnome-calculator"] floating enable
+	for_window [class="dotnet"] floating enable
+	assign [class="Dotnet"] $ws16
+
+# Disable screensaver
+	exec --no-startup-id xset s off
+	exec --no-startup-id xset -dpms
+
+# Autorun
+	exec --no-startup-id discord-canary --start-minimized
+	exec --no-startup-id steam-native -silent
+	exec --no-startup-id mailspring --background
+	exec --no-startup-id qbittorrent
+	exec --no-startup-id blueberry-tray
+	exec --no-startup-id dynperf
+	exec --no-startup-id /home/faith/.local/bin/spotify
+
