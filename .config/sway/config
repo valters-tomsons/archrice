@@ -1,3 +1,8 @@
+# Sway Configuration
+# https://github.com/FaithLV
+#
+# For documentation use `man 5 sway`
+
 # Names for attached monitors
 	set $primary "Goldstar Company Ltd LG IPS FULLHD 0x00000101"
 	set $second "Samsung Electric Company SyncMaster H9LQ110562"
@@ -10,11 +15,10 @@
 	output $primary background /home/faith/Pictures/System/Primary.png fill
 	output $second background /home/faith/Pictures/System/Secondary.png fill
 
-	bar {
-  		status_command i3status
-	}
+# Audio Device ALSA index
+	set $audiodevice "alsa_output.pci-0000_00_14.2.analog-stereo"
 
-# Names for default workspaces
+# Setup workspaces
 	set $ws1 "1"
 	set $ws2 "2"
 	set $ws3 "3"
@@ -37,22 +41,6 @@
 	set $ws19 "19:F9"
 	set $ws20 "20:F10"
 
-
-# Audio Device ALSA index
-	set $audiodevice "alsa_output.pci-0000_00_14.2.analog-stereo"
-
-# Client Colors
-	set $focused_border		 "#E80C88"
-	set $focused_inactive_border	 "#767676"
-	set $unfocused_border		 "#767676"
-
-	set $focused_element		 "#E80C88"
-	set $unfocused_element		 "#4C4A48"
-
-	set $focused_background		 "#C30052"
-	set $unfocused_background	 "#4C4A48"
-
-# $primary monitor workspace binds
 	workspace $ws1 output $primary
 	workspace $ws2 output $primary
 	workspace $ws3 output $primary
@@ -64,7 +52,6 @@
 	workspace $ws9 output $primary
 	workspace $ws10 output $primary
 
-# $second monitor workspace binds
 	workspace $ws11 output $second
 	workspace $ws12 output $second
 	workspace $ws13 output $second
@@ -75,6 +62,17 @@
 	workspace $ws18 output $second
 	workspace $ws19 output $second
 	workspace $ws20 output $second
+
+# Client Colors
+	set $focused_border		 "#E80C88"
+	set $focused_inactive_border	 "#767676"
+	set $unfocused_border		 "#767676"
+
+	set $focused_element		 "#E80C88"
+	set $unfocused_element		 "#4C4A48"
+
+	set $focused_background		 "#C30052"
+	set $unfocused_background	 "#4C4A48"
 
 # Font for window titles
 	font pango:Roboto Regular 9
@@ -180,9 +178,6 @@
 # reload the configuration file
 	bindsym Mod4+Shift+c reload
 
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-	bindsym Mod4+Shift+r restart
-
 # exit i3 (logs you out of your X session)
 	bindsym Mod4+Shift+e exec "i3-nagbar -t warning -m ' ' -b '     Exit i3      ' 'i3-msg exit'"
 
@@ -274,10 +269,6 @@
 	for_window [class="dotnet"] floating enable
 	assign [class="Dotnet"] $ws16
 
-# Disable screensaver
-	exec --no-startup-id xset s off
-	exec --no-startup-id xset -dpms
-
 # Autorun
 	exec --no-startup-id discord-canary --start-minimized
 	exec --no-startup-id steam-native -silent
@@ -287,3 +278,7 @@
 	exec --no-startup-id dynperf
 	exec --no-startup-id /home/faith/.local/bin/spotify
 
+# i3 statusbar
+	bar {
+  		status_command i3status
+	}
