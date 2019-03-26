@@ -51,3 +51,6 @@
 	include ./include/general_keybinds
 	include ./include/eyecandy
 	include ./include/autorun
+
+# Keyboard layout
+	input "*" xkb_layout lv
