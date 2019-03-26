@@ -38,73 +38,18 @@ On_White='\e[47m'       # White
 
 NC="\e[m"               # Color Reset
 
-
 # new alert text
 ALERT=${BWhite}${On_Red} # Bold White on red background
 
-# mostly used alias functions
-
-alias cls="clear"
+# alias functions
 alias ..="cd .."
-alias cd..="cd .."
 alias ls="ls -CF --color=auto"
-alias ll="ls -lisa --color=auto"
-alias lsl="ls -lhFA | less"
-alias home="cd ~"
-alias df="df -ahiT --total"
-alias mkdir="mkdir -pv"
-alias userlist="cut -d: -f1 /etc/passwd"
-alias fhere="find . -name "
-alias free="free -mt"
-alias du="du -ach | sort -h"
-alias ps="ps auxf"
-alias psgrep="ps aux | grep -v grep | grep -i -e VSZ -e"
 alias wget="wget -c"
-alias histg="history | grep"
 alias myip="curl http://ipecho.net/plain; echo"
 alias logs="find /var/log -type f -exec file {} \; | grep 'text' | cut -d' ' -f1 | sed -e's/:$//g' | grep -v '[0-9]$' | xargs tail -f"
-alias folders='find . -maxdepth 1 -type d -print0 | xargs -0 du -sk | sort -rn'
 alias grep='grep --color=auto'
 
-# Creates an archive (*.tar.gz) from given directory.
-function maketar() { tar cvzf "${1%%/}.tar.gz"  "${1%%/}/"; }
-
-# Create a ZIP archive of a file or folder.
-function makezip() { zip -r "${1%%/}.zip" "$1" ; }
-
-function extract {
- if [ -z "$1" ]; then
-    # display usage if no parameters given
-    echo "Usage: extract <path/file_name>.<zip|rar|bz2|gz|tar|tbz2|tgz|Z|7z|xz|ex|tar.bz2|tar.gz|tar.xz>"
- else
-    if [ -f $1 ] ; then
-        # NAME=${1%.*}
-        # mkdir $NAME && cd $NAME
-        case $1 in
-          *.tar.bz2)   tar xvjf ../$1    ;;
-          *.tar.gz)    tar xvzf ../$1    ;;
-          *.tar.xz)    tar xvJf ../$1    ;;
-          *.lzma)      unlzma ../$1      ;;
-          *.bz2)       bunzip2 ../$1     ;;
-          *.rar)       unrar x -ad ../$1 ;;
-          *.gz)        gunzip ../$1      ;;
-          *.tar)       tar xvf ../$1     ;;
-          *.tbz2)      tar xvjf ../$1    ;;
-          *.tgz)       tar xvzf ../$1    ;;
-          *.zip)       unzip ../$1       ;;
-          *.Z)         uncompress ../$1  ;;
-          *.7z)        7z x ../$1        ;;
-          *.xz)        unxz ../$1        ;;
-          *.exe)       cabextract ../$1  ;;
-          *)           echo "extract: '$1' - unknown archive method" ;;
-        esac
-    else
-        echo "$1 - file does not exist"
-    fi
-fi
-}
-
-# jump directorys upwards until it hits a directory with multiple folders
+# jump directories upwards until it hits a directory with multiple folders
 up(){
   local d=""
   limit=$1
@@ -119,15 +64,10 @@ up(){
   cd $d
 }
 
-# create an directory and directly cd into it
-mcd () {
-  mkdir -p $1
-  cd $1
-}
-
-# set PATH so it includes user's private bin directories
+# private user bin directory
 PATH="$HOME/.local/bin:$PATH"
 
+# Bash Prompt
 export PS1="[\[\e[35m\]\u\[\e[m\]]: \[\e[34m\]\w\[\e[m\]\[\e[31m\] >\[\e[m\] "
 
 [ -e "/etc/DIR_COLORS" ] && DIR_COLORS="/etc/DIR_COLORS"
@@ -137,4 +77,5 @@ eval "`dircolors -b $DIR_COLORS`"
 
 stty -ixon
 
-export EDITOR=vim
+export EDITOR='vim'
+NNN_USE_EDITOR=1
