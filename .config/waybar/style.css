@@ -67,3 +67,8 @@ window#waybar {
 #tray {
     background-color: #2980b9;
 }
+
+#custom-controllerbattery {
+	padding: 0 10px;
+	background: #D81B60;
+}
