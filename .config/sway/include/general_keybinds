@@ -39,8 +39,8 @@
 	bindsym Mod4+v split v
 
 # Scroll workspaces
-#	bindsym --whole-window Mod4+J workspace prev_on_output
-#	bindsym --whole-window Mod4+K workspace next_on_output
+	bindsym Mod4+j workspace prev_on_output
+	bindsym Mod4+k workspace next_on_output
 
 # enter fullscreen
 	bindsym Mod4+f fullscreen toggle
