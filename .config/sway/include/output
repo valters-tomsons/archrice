@@ -1,0 +1,11 @@
+# Sway Configuration
+# Configures sway-output
+#
+
+# Set Monitor positions
+        output $primary pos 1280 0
+        output $second pos 0 0
+
+# Set Wallpapers
+        output $primary background /home/faith/Pictures/System/Primary.png fill
+        output $second background /home/faith/Pictures/System/Secondary.png fill

@@ -1,0 +1,56 @@
+# Sway Configuration
+# Manages window workspace assignments and window properties
+#
+
+# General-use software
+        assign [class="Firefox"] $ws1
+	assign [class="Code"] $ws2
+        assign [class="Nautilus"] $ws3
+        assign [class="mpv"] $ws4
+
+        assign [class="steam"] $ws5
+
+        assign [class="qBittorrent"] $ws15
+        assign [class="Mailspring"] $ws16
+        assign [class="Dotnet"] $ws16
+
+        assign [class="Gnome-control-center"] $ws17
+        assign [class="Blueberry.py"] $ws17
+        assign [class="deepin-system-monitor"] $ws17
+
+        assign [class="Lutris"] $ws18
+        assign [class="Steam"] $ws18
+        assign [instance="origin.exe"] $ws18
+
+        assign [class="discord"] $ws19
+        assign [class="Spotify"] $ws20
+
+
+# Games
+        assign [class="retroarch"] $ws5
+        assign [class="Vmplayer"] $ws5
+        assign [class="csgo_linux64"] $ws5
+
+        assign [class="dota2"] $ws5
+        	for_window [class="dota2"] fullscreen enable
+
+        assign [class="PCSX2"] $ws5
+                for_window [class="PCSX2"] floating enable
+
+        assign [class="net-minecraft-bootstrap-Bootstrap"] $ws5
+        assign [class="GameGuide"] $ws5
+        assign [class="Civ6Sub"] $ws5
+        assign [class="RPCS3"] $ws5
+
+        #Unity Games
+        assign [class="EtG.x86_64"] $ws5
+        assign [class="Clustertruck.x86_64"] $ws5
+
+        #Wine
+        for_window [instance="origin.exe"] floating enable
+        for_window [instance="bfvob.exe"] fullscreen enable
+        assign [class="Wine"] $ws5
+
+# Additional Flags 
+        for_window [class="Gnome-calculator"] floating enable
+        for_window [class="dotnet"] floating enable

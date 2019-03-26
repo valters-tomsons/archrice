@@ -1,0 +1,18 @@
+# Sway Configuration
+# Defines visual settings
+#
+
+# Font for window titles
+	font pango:Roboto Regular 9
+
+# Edge borders
+	for_window [class="^.*"] border pixel 1
+
+# Gaps
+	gaps inner 5 
+	gaps outer 4
+
+# Set Edge Border Colors
+	client.focused		$focused_element	$focused_background	#000000	$focused_border			$focused_border
+	client.focused_inactive $unfocused_element	$unfocused_background	#000000	$focused_inactive_border	$focused_inactive_border
+	client.unfocused	$unfocused_element	$unfocused_background	#000000	$unfocused_border		$unfocused_border

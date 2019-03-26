@@ -1,0 +1,17 @@
+# Sway Configuration
+# Contains all autorun programs
+#
+
+# Statusbar
+	bar {
+    	swaybar_command waybar
+	}
+
+# Autorun Scripts
+	exec --no-startup-id discord-canary --start-minimized
+	exec --no-startup-id steam-native -silent
+	exec --no-startup-id mailspring --background
+	exec --no-startup-id qbittorrent
+	exec --no-startup-id blueberry-tray
+	exec --no-startup-id dynperf
+	exec --no-startup-id /home/faith/.local/bin/spotify

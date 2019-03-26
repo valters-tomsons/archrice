@@ -1,0 +1,67 @@
+# Sway Configuration
+# General keybindings
+#
+
+# reload configuration
+	bindsym Mod4+Shift+c reload
+
+# Launch terminal
+	bindsym Mod4+Return exec st -f "Roboto Mono:size=12" 
+
+# Sound Volume controls
+	bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $audiodevice +5%
+	bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume $audiodevice -5%
+	bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute $audiodevice toggle
+
+# Media controls
+	bindsym XF86AudioPlay exec playerctl play
+	bindsym XF86AudioStop exec playerctl pause
+	bindsym XF86AudioNext exec playerctl next
+	bindsym XF86AudioPrev exec playerctl previous
+
+# Open Application launcher
+	bindsym Mod4+d exec rofi -show run -config ~/.config/rofi/rofi_full.conf 
+
+# Open rofi-lpass
+	bindsym Mod4+p exec rofi -modi lpass:~/Source/rofi-lpass/rofi-lpass -show lpass -theme ~/.config/rofi/themes/purple.rasi
+
+# Kill current window
+	bindsym Mod4+Shift+q kill
+
+# toggle tiling / floating
+	bindsym Mod4+Shift+space floating toggle
+
+# Mouse+Mod4 to drag floating windows
+	floating_modifier Mod4
+
+# split in orientation
+	bindsym Mod4+h split h
+	bindsym Mod4+v split v
+
+# Scroll workspaces
+#	bindsym --whole-window Mod4+J workspace prev_on_output
+#	bindsym --whole-window Mod4+K workspace next_on_output
+
+# enter fullscreen
+	bindsym Mod4+f fullscreen toggle
+
+# change layout 
+	bindsym Mod4+w layout tabbed
+	bindsym Mod4+e layout toggle split
+
+# exit i3 (logs you out of your X session)
+	bindsym Mod4+Shift+e exec "swaynag -t warning -m 'You sure?' -b '     Exit      ' 'i3-msg exit'"
+
+# Resize Mode
+	bindsym Mod4+r mode "resize"
+	mode "resize"
+        {
+	    bindsym Left        resize shrink width 10 px or 10 ppt
+	    bindsym Up          resize grow height 10 px or 10 ppt
+	    bindsym Down        resize shrink height 10 px or 10 ppt
+	    bindsym Right       resize grow width 10 px or 10 ppt
+
+	    bindsym Return mode "default"
+	    bindsym Escape mode "default"
+	    bindsym Mod4+r mode "default" 
+	}
