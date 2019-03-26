@@ -50,7 +50,7 @@
 	bindsym Mod4+e layout toggle split
 
 # exit i3 (logs you out of your X session)
-	bindsym Mod4+Shift+e exec "swaynag -t warning -m 'You sure?' -b '     Exit      ' 'i3-msg exit'"
+	bindsym Mod4+Shift+e exec "swaynag -t warning -m 'You sure?' -b '     Exit      ' 'swaymsg exit'"
 
 # Resize Mode
 	bindsym Mod4+r mode "resize"
