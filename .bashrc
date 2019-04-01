@@ -48,6 +48,7 @@ alias wget="wget -c"
 alias myip="curl http://ipecho.net/plain; echo"
 alias logs="find /var/log -type f -exec file {} \; | grep 'text' | cut -d' ' -f1 | sed -e's/:$//g' | grep -v '[0-9]$' | xargs tail -f"
 alias grep='grep --color=auto'
+alias src='cd ~/Source'
 
 # jump directories upwards until it hits a directory with multiple folders
 up(){

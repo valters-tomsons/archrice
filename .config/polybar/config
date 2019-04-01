@@ -92,7 +92,7 @@ font-2 = NotoSansMono
 font-3 = NotoSansSymbols2-Regular:pixelsize=10;1
 
 modules-left = i3
-modules-center = polytemps date controllerbattery 
+modules-center = date controllerbattery 
 modules-right = pulseaudio cpu memory
 
 tray-position = right
@@ -476,7 +476,7 @@ menu-2-1-exec = menu-open-0
 [module/controllerbattery]
 type = custom/script
 
-exec = /home/faith/Source/controllerbattery/bin/Release/netcoreapp2.2/linux-x64/publish/controllerbattery
+exec = /home/faith/.local/bin/controllerbattery
 
 format-underline = #BF0077
 

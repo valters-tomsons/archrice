@@ -16,3 +16,6 @@
 	client.focused		$focused_element	$focused_background	#000000	$focused_border			$focused_border
 	client.focused_inactive $unfocused_element	$unfocused_background	#000000	$focused_inactive_border	$focused_inactive_border
 	client.unfocused	$unfocused_element	$unfocused_background	#000000	$unfocused_border		$unfocused_border
+
+# Hide Titlebar
+	titlebar_border_thickness 0

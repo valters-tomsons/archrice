@@ -259,6 +259,7 @@
 	assign [class="GameGuide"] $ws5
 	assign [class="Civ6Sub"] $ws5
 	assign [class="RPCS3"] $ws5
+	assign [class="Dirt4"] $ws5
 
 	#Unity Games
 	assign [class="EtG.x86_64"] $ws5
@@ -283,7 +284,7 @@
 
 # Autorun
 	exec --no-startup-id discord-canary --start-minimized
-	exec --no-startup-id steam-native -silent
+	exec --no-startup-id steam-runtime -silent
 	exec --no-startup-id mailspring --background
 	exec --no-startup-id qbittorrent
 	exec --no-startup-id blueberry-tray

@@ -36,6 +36,8 @@ Plugin 'junegunn/goyo.vim'
 
 Plugin 'OrangeT/vim-csharp'
 
+Plugin 'vim-airline/vim-airline'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -128,3 +130,6 @@ syntax on
 
 map <C-b> :NERDTreeToggle<CR>
 map <C-h> :UndotreeToggle<CR>
+
+" Save buffer as root
+cmap W w !sudo tee %
