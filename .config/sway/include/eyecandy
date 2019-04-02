@@ -5,8 +5,6 @@
 # Font for window titles
 	font pango:Roboto Regular 9
 
-# Edge borders
-	for_window [class="^.*"] border pixel 1
 
 # Gaps
 	gaps inner 5 
@@ -17,5 +15,6 @@
 	client.focused_inactive $unfocused_element	$unfocused_background	#000000	$focused_inactive_border	$focused_inactive_border
 	client.unfocused	$unfocused_element	$unfocused_background	#000000	$unfocused_border		$unfocused_border
 
-# Hide Titlebar
-	titlebar_border_thickness 0
+# Edge Borders (X and Wayland)
+	for_window [class="^.*"] border pixel $edge_width
+	for_window [app_id="^.*"] border pixel $edge_width

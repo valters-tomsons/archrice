@@ -44,6 +44,9 @@
 	set $focused_background		 "#C30052"
 	set $unfocused_background	 "#4C4A48"
 
+# Preferences
+	set $edge_width 1
+
 # Configurations
 	include ./include/output
 	include ./include/workspaces
