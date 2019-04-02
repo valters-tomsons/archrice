@@ -4,3 +4,4 @@
 
 # General-use software
         assign [app_id="qbittorrent"] $ws15
+	assign [app_id="lutris"] $ws18
