@@ -15,6 +15,5 @@
 	client.focused_inactive $unfocused_element	$unfocused_background	#000000	$focused_inactive_border	$focused_inactive_border
 	client.unfocused	$unfocused_element	$unfocused_background	#000000	$unfocused_border		$unfocused_border
 
-# Edge Borders (X and Wayland)
-	for_window [class="^.*"] border pixel $edge_width
-	for_window [app_id="^.*"] border pixel $edge_width
+# Edge Borders 
+	default_border pixel $edge_width
