@@ -1,0 +1,6 @@
+# Sway Configuration
+# Manages window workspace assignments and window properties for native wayland windows
+#
+
+# General-use software
+        assign [app_id="qbittorrent"] $ws15
