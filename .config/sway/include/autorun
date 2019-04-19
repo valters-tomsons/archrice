@@ -9,7 +9,7 @@
 
 # Autorun Scripts
 	exec --no-startup-id discord-canary --start-minimized
-	exec --no-startup-id steam-native -silent
+	exec --no-startup-id steam-runtime -silent
 	exec --no-startup-id mailspring --background
 	exec --no-startup-id qbittorrent
 	exec --no-startup-id blueberry-tray
