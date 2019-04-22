@@ -5,7 +5,7 @@
 	exec --no-startup-id /home/faith/.local/bin/fixmonitors
 
 # Set up wallpapers
-	exec_always --no-startup-id feh --bg-scale ~/Pictures/System/Primary.png --bg-fill ~/Pictures/System/Secondary.png
+	exec_always --no-startup-id feh --bg-scale ~/Pictures/System/Secondary.png --bg-fill ~/Pictures/System/Primary.png 
 
 # [re]start polybar
 	exec_always --no-startup-id ~/.config/polybar/launch.sh
