@@ -150,12 +150,17 @@
 # start rofi lastpass
 	bindsym Mod4+p exec --no-startup-id rofi -modi lpass:~/Source/rofi-lpass/rofi-lpass -show lpass -theme ~/.config/rofi/themes/purple.rasi
 
+# start rofi project list
+	bindsym Mod4+o exec --no-startup-id ~/.local/scripts/list-projects
 
 # change focus:
 	bindsym Mod4+Left focus left
 	bindsym Mod4+Down focus down
 	bindsym Mod4+Up focus up
 	bindsym Mod4+Right focus right
+
+	bindsym Mod4+h focus left
+	bindsym Mod4+l focus right
 
 # move focused window
 	bindsym Mod4+Shift+Left move left
@@ -164,7 +169,7 @@
 	bindsym Mod4+Shift+Right move right
 
 # split in orientation
-	bindsym Mod4+h split h
+	bindsym Mod4+b split h
 	bindsym Mod4+v split v
 
 # enter fullscreen
@@ -281,6 +286,9 @@
 # Disable screensaver
 	exec --no-startup-id xset s off
 	exec --no-startup-id xset -dpms
+
+# Generate Colorscheme
+	exec --no-startup-id ~/.local/scripts/set-colors
 
 # Autorun
 	exec --no-startup-id discord-canary --start-minimized

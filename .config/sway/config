@@ -53,6 +53,7 @@
 	include ./include/x_assign
 	include ./include/wayland_assign
 	include ./include/general_keybinds
+	include ./include/menus_keybinds
 	include ./include/eyecandy
 	include ./include/autorun
 

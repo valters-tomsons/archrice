@@ -50,6 +50,8 @@ alias logs="find /var/log -type f -exec file {} \; | grep 'text' | cut -d' ' -f1
 alias grep='grep --color=auto'
 alias src='cd ~/Source'
 
+alias mutt=neomutt
+
 # jump directories upwards until it hits a directory with multiple folders
 up(){
   local d=""

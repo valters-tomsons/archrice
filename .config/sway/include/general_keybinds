@@ -19,12 +19,6 @@
 	bindsym XF86AudioNext exec playerctl next
 	bindsym XF86AudioPrev exec playerctl previous
 
-# Open Application launcher
-	bindsym Mod4+d exec rofi -show run -config ~/.config/rofi/rofi_full.conf 
-
-# Open rofi-lpass
-	bindsym Mod4+p exec rofi -modi lpass:~/Source/rofi-lpass/rofi-lpass -show lpass -theme ~/.config/rofi/themes/purple.rasi
-
 # Kill current window
 	bindsym Mod4+Shift+q kill
 

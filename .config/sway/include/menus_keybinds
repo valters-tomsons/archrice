@@ -1,0 +1,12 @@
+# Sway Configuration
+# Dmenu (type) menu configuration
+#
+
+# Applications
+	bindsym Mod4+d exec rofi -show run -config ~/.config/rofi/rofi_full.conf
+
+# Lastpass Vault
+	bindsym Mod4+p exec rofi -modi lpass:~/Source/rofi-lpass/rofi-lpass -show lpass -theme ~/.config/rofi/themes/purple.rasi
+
+# Source Projects
+	bindsym Mod4+o exec --no-startup-id ~/.local/scripts/list-projects
