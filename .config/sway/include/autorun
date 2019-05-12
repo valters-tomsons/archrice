@@ -4,7 +4,7 @@
 
 # Statusbar
 	bar {
-    	swaybar_command waybar
+	    	swaybar_command waybar -c /home/faith/.config/waybar/config
 	}
 
 # Autorun Scripts

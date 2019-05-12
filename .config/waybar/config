@@ -35,7 +35,7 @@
         "format-icons": {
             "default": ["🔉", "🔉"]
         },
-        "on-click": "env XDG_CURRENT_DESKTOP=GNOME gnome-control-center"
+        "on-click": "pavucontrol"
     },
     "custom/controllerbattery": {
 	    "format": "{}",

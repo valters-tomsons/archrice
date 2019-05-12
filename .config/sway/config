@@ -48,14 +48,7 @@
 	set $edge_width 1
 
 # Configurations
-	include ./include/output
-	include ./include/workspaces
-	include ./include/x_assign
-	include ./include/wayland_assign
-	include ./include/general_keybinds
-	include ./include/menus_keybinds
-	include ./include/eyecandy
-	include ./include/autorun
+	include ./include/*
 
 # Keyboard layout
 	input "*" xkb_layout lv
