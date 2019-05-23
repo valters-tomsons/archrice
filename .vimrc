@@ -130,6 +130,3 @@ syntax on
 
 map <C-b> :NERDTreeToggle<CR>
 map <C-h> :UndotreeToggle<CR>
-
-" Save buffer as root
-cmap W w !sudo tee %

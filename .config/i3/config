@@ -2,7 +2,7 @@
 # https://i3wm.org/docs/userguide.html for a complete reference!
 
 # Set up monitor layout
-	exec --no-startup-id /home/faith/.local/bin/fixmonitors
+	exec --no-startup-id /home/faith/.local/scripts/fixmonitors
 
 # Set up wallpapers
 	exec_always --no-startup-id feh --bg-scale ~/Pictures/System/Secondary.png --bg-fill ~/Pictures/System/Primary.png 
@@ -296,5 +296,5 @@
 	exec --no-startup-id mailspring --background
 	exec --no-startup-id qbittorrent
 	exec --no-startup-id blueberry-tray
-	exec --no-startup-id dynperf
+	exec --no-startup-id /home/faith/.local/bin/dynperf
 	exec --no-startup-id /home/faith/.local/bin/spotify
