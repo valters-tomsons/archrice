@@ -5,7 +5,7 @@
 	exec --no-startup-id /home/faith/.local/scripts/fixmonitors
 
 # Set up wallpapers
-	exec_always --no-startup-id feh --bg-scale ~/Pictures/System/Secondary.png --bg-fill ~/Pictures/System/Primary.png 
+	exec_always --no-startup-id feh --bg-scale ~/Pictures/System/Primary.png --bg-center ~/Pictures/System/Secondary.png 
 
 # [re]start polybar
 	exec_always --no-startup-id ~/.config/polybar/launch.sh
@@ -139,7 +139,7 @@
 	floating_modifier Mod4
 
 # start a terminal
-	bindsym Mod4+Return exec st -f "Roboto Mono:size=12" 
+	bindsym Mod4+Return exec st -f "Roboto Mono:size=14" fish 
 
 # kill focused window
 	bindsym Mod4+Shift+q kill
@@ -159,14 +159,17 @@
 	bindsym Mod4+Up focus up
 	bindsym Mod4+Right focus right
 
-	bindsym Mod4+h focus left
-	bindsym Mod4+l focus right
+#	bindsym Mod4+h focus left
+#	bindsym Mod4+l focus right
 
 # move focused window
 	bindsym Mod4+Shift+Left move left
 	bindsym Mod4+Shift+Down move down
 	bindsym Mod4+Shift+Up move up
 	bindsym Mod4+Shift+Right move right
+
+# lockscreen
+	bindsym Mod4+l exec "betterlockscreen -l dim"
 
 # split in orientation
 	bindsym Mod4+b split h

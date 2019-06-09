@@ -1,2 +1,2 @@
 #!/bin/sh
-xrandr --output HDMI-A-0 --mode 1920x1080 --primary --output DisplayPort-0 --mode 1280x1024 --left-of HDMI-A-0
+xrandr --output HDMI-A-0 --mode 1920x1080 --primary --output DisplayPort-0 --mode 1280x1024 --right-of HDMI-A-0
