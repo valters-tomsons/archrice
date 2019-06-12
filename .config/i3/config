@@ -34,8 +34,14 @@
 	set $ws20 "20:F10"
 
 # Names for attached monitors
-	set $first "HDMI-A-0"
-	set $second "DisplayPort-0"
+
+	#R9 380 Mesa
+	#set $first "HDMI-A-0"
+	#set $second "DisplayPort-0"
+	
+	#GTX 1060 stinky
+	set $first "HDMI-0"
+	set $second "DVI-D-0"
 
 # Audio Device ALSA index
 	set $audiodevice "alsa_output.pci-0000_00_14.2.analog-stereo"
@@ -282,6 +288,8 @@
 	for_window [class="Gnome-calculator"] floating enable
 	for_window [class="dotnet"] floating enable
 	assign [class="Dotnet"] $ws16
+	workspace $ws2 gaps inner 1
+	workspace $ws2 gaps outer 1
 
 # Display compositor for transparency (use compton-git!!!)
 	exec_always --no-startup-id compton --config ~/.config/compton.conf
