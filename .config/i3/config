@@ -41,7 +41,7 @@
 	
 	#GTX 1060 stinky
 	set $first "HDMI-0"
-	set $second "DVI-D-0"
+	set $second "DP-0"
 
 # Audio Device ALSA index
 	set $audiodevice "alsa_output.pci-0000_00_14.2.analog-stereo"
