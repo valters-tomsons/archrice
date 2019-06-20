@@ -13,7 +13,7 @@ settings:
   url.searchengines:
     global:
       DEFAULT: https://duckduckgo.com/?q={}
-      arch: https://wiki.archlinux.org/index.php/{}
+      arch: https://wiki.archlinux.org/index.php?search={}
       gl: https://google.com/search?hl=en&q={}
       rd: https://reddit.com/r/{}
       yt: https://youtube.com/results?search_query={}
