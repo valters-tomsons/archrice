@@ -1,0 +1,4 @@
+#!/bin/sh
+killall discord-canary
+sudo aura -Ax discord-canary
+discord-canary
