@@ -220,8 +220,8 @@
 	bindsym Mod4+r mode "default" 
 	}
 
-# Bind Screenshot snipping tool
-	bindsym --release Print exec --no-startup-id gnome-screenshot -i
+# Screenshot Script 
+	bindsym --release Print exec --no-startup-id /home/faith/.local/scripts/screenshot
 
 # Bind gnome sound controller
 	bindsym --release Mod4+F11 exec "env XDG_CURRENT_DESKTOP=GNOME gnome-control-center"
