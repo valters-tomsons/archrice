@@ -1,3 +1,4 @@
 #!/bin/sh
 notes=$(cat $HOME/.config/screenshot/note-categories | grep -v "^#"  | bemenu -b -i -f -l 4 -p "Add note:" --fn "Roboto Mono 12" )
+sleep 1
 scrot "%Y-%m-%d-$notes.png" -e 'mv $f  ~/Pictures/Screenshots/'
