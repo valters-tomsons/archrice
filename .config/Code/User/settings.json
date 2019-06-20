@@ -63,4 +63,7 @@
     "razor.trace": "Verbose",
     "editor.renderWhitespace": "all",
     "razor.disabled": true,
+    "debug.allowBreakpointsEverywhere": true,
+    "rust-client.updateOnStartup": true,
+    "rust.all_features": true,
 }
