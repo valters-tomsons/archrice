@@ -85,3 +85,5 @@ stty -ixon
 
 export EDITOR='vim'
 NNN_USE_EDITOR=1
+
+source /home/faith/.cargo/env
