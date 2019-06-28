@@ -5,7 +5,7 @@
 	exec --no-startup-id /home/faith/.local/scripts/fixmonitors
 
 # Set up wallpapers
-	exec_always --no-startup-id feh --bg-scale ~/Pictures/System/Primary.png --bg-max --zoom 100% ~/Pictures/System/Secondary.png 
+	exec_always --no-startup-id feh --bg-scale ~/Pictures/System/Primary.png --bg-fill ~/Pictures/System/Secondary.png 
 
 # [re]start polybar
 	exec_always --no-startup-id ~/.config/polybar/launch.sh
@@ -274,10 +274,12 @@
 	assign [class="Civ6Sub"] $ws5
 	assign [class="RPCS3"] $ws5
 	assign [class="Dirt4"] $ws5
+	assign [class="underlords"] $ws5
 
 	#Unity Games
 	assign [class="EtG.x86_64"] $ws5
 	assign [class="Clustertruck.x86_64"] $ws5
+	assign [class="fw.x86_64"] $ws5
 
 	#Wine	
 	for_window [instance="origin.exe"] floating enable
