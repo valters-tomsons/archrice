@@ -159,6 +159,12 @@
 # start rofi project list
 	bindsym Mod4+o exec --no-startup-id ~/.local/scripts/list-projects
 
+# start rofi emoji-selector
+	bindsym Mod4+i exec --no-startup-id ~/Source/emoji-selector/emoji-selector
+
+# start rofi gamepad profile selector
+	bindsym Mod4+u exec --no-startup-id ~/.local/scripts/gamepad-profile
+
 # change focus:
 	bindsym Mod4+Left focus left
 	bindsym Mod4+Down focus down
@@ -280,6 +286,7 @@
 	assign [class="EtG.x86_64"] $ws5
 	assign [class="Clustertruck.x86_64"] $ws5
 	assign [class="fw.x86_64"] $ws5
+	assign [class="ToTheMoon.bin.x86_64"] $ws5
 
 	#Wine	
 	for_window [instance="origin.exe"] floating enable
@@ -301,7 +308,7 @@
 	exec --no-startup-id xset -dpms
 
 # Generate Colorscheme
-	exec --no-startup-id ~/.local/scripts/set-colors
+#	exec --no-startup-id ~/.local/scripts/set-colors
 
 # Autorun
 	exec --no-startup-id discord-canary --start-minimized
