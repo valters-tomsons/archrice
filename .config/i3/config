@@ -185,7 +185,7 @@
 	bindsym Mod4+Shift+Right move right
 
 # lockscreen
-	bindsym Mod4+l exec "betterlockscreen -l dim"
+	bindsym Mod4+l exec "betterlockscreen -l dimblur -b 30"
 
 # split in orientation
 	bindsym Mod4+b split h
