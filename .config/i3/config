@@ -81,6 +81,10 @@
 	workspace $ws19 output $second
 	workspace $ws20 output $second
 
+# Workspace specific tweaks
+	workspace $ws2 gaps inner 1
+	workspace $ws2 gaps outer 1
+
 # Font for window titles
 	font pango:Roboto Regular 9
 
@@ -242,23 +246,17 @@
 	gaps outer 4
 
 # Assign software to workspaces
-# xprop (WM_CLASS)[1] 
 	assign [class="Firefox"] $ws1
-	assign [class="Code"] $ws2 #vscode
-	assign [class="Nautilus"] $ws3
-	assign [class="mpv"] $ws4
-
-	assign [class="steam"] $ws5
+	assign [class="Code"] $ws2
 
 	assign [class="qBittorrent"] $ws15
 	assign [class="Mailspring"] $ws16
-	assign [class="Gnome-control-center"] $ws17
 	assign [class="Blueberry.py"] $ws17
-	assign [class="deepin-system-monitor"] $ws17
 
 	assign [class="Lutris"] $ws18
 	assign [class="Steam"] $ws18
 	assign [instance="origin.exe"] $ws18
+	assign [instance="epicgameslauncher.exe"] $ws18
 
 	assign [class="discord"] $ws19
 	assign [class="Spotify"] $ws20
@@ -266,12 +264,14 @@
 # Assign all games to workspace $gamews
 # Also apply game specific settings
 	assign [class="retroarch"] $ws5
-	assign [class="Vmplayer"] $ws5
 	assign [class="csgo_linux64"] $ws5
+
 	assign [class="dota2"] $ws5
 		for_window [class="dota2"] fullscreen enable
+
 	assign [class="PCSX2"] $ws5
 		for_window [class="PCSX2"] floating enable
+
 	assign [class="net-minecraft-bootstrap-Bootstrap"] $ws5
 	assign [class="GameGuide"] $ws5
 	assign [class="Civ6Sub"] $ws5
@@ -289,20 +289,13 @@
 	for_window [instance="origin.exe"] floating enable
 	for_window [instance="bfvob.exe"] fullscreen enable
 	assign [class="Wine"] $ws5
-		
-# Additional Software properties
-	for_window [class="Gnome-calculator"] floating enable
-	for_window [class="dotnet"] floating enable
-	assign [class="Dotnet"] $ws16
-	workspace $ws2 gaps inner 1
-	workspace $ws2 gaps outer 1
-
-# Display compositor for transparency (use compton-git!!!)
-	exec_always --no-startup-id compton --config ~/.config/compton.conf
 
 # Disable screensaver
 	exec --no-startup-id xset s off
 	exec --no-startup-id xset -dpms
+
+# Display compositor
+	exec_always --no-startup-id compton --config ~/.config/compton.conf
 
 # Autorun
 	exec --no-startup-id discord-canary --start-minimized
