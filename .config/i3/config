@@ -171,9 +171,6 @@
 	bindsym Mod4+Up focus up
 	bindsym Mod4+Right focus right
 
-#	bindsym Mod4+h focus left
-#	bindsym Mod4+l focus right
-
 # move focused window
 	bindsym Mod4+Shift+Left move left
 	bindsym Mod4+Shift+Down move down
@@ -306,9 +303,6 @@
 # Disable screensaver
 	exec --no-startup-id xset s off
 	exec --no-startup-id xset -dpms
-
-# Generate Colorscheme
-#	exec --no-startup-id ~/.local/scripts/set-colors
 
 # Autorun
 	exec --no-startup-id discord-canary --start-minimized
