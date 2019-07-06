@@ -169,6 +169,9 @@
 # start rofi gamepad profile selector
 	bindsym Mod4+u exec --no-startup-id ~/.local/scripts/gamepad-profile
 
+# google keep notes
+	bindsym Mod4+n exec --no-startup-id google-keep-desktop
+
 # change focus:
 	bindsym Mod4+Left focus left
 	bindsym Mod4+Down focus down
@@ -253,10 +256,10 @@
 	assign [class="Mailspring"] $ws16
 	assign [class="Blueberry.py"] $ws17
 
-	assign [class="Lutris"] $ws18
-	assign [class="Steam"] $ws18
-	assign [instance="origin.exe"] $ws18
-	assign [instance="epicgameslauncher.exe"] $ws18
+	assign [class="Lutris"] $ws11
+	assign [class="Steam"] $ws12
+	assign [instance="origin.exe"] $ws12
+	assign [instance="epicgameslauncher.exe"] $ws12
 
 	assign [class="discord"] $ws19
 	assign [class="Spotify"] $ws20
