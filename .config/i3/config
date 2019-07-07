@@ -169,6 +169,8 @@
 # google keep notes
 	bindsym Mod4+n exec --no-startup-id google-keep-desktop
 
+	bindsym --release Ctrl+Shift+Delete exec --no-startup-id xkill
+
 # change focus:
 	bindsym Mod4+Left focus left
 	bindsym Mod4+Down focus down
