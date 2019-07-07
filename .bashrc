@@ -67,12 +67,6 @@ up(){
   cd $d
 }
 
-# private user bin directory
-PATH="$HOME/.local/bin:$PATH"
-
-# scripts directory
-PATH="$HOME/.local/scripts:$PATH"
-
 # Bash Prompt
 export PS1="[\[\e[35m\]\u\[\e[m\]]: \[\e[34m\]\w\[\e[m\]\[\e[31m\] >\[\e[m\] "
 
