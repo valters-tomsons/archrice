@@ -166,9 +166,6 @@
 # start rofi emoji-selector
 	bindsym Mod4+i exec --no-startup-id ~/Source/emoji-selector/emoji-selector
 
-# start rofi gamepad profile selector
-	bindsym Mod4+u exec --no-startup-id ~/.local/scripts/gamepad-profile
-
 # google keep notes
 	bindsym Mod4+n exec --no-startup-id google-keep-desktop
 
