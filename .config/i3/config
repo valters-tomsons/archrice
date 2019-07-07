@@ -254,6 +254,7 @@
 
 	assign [class="qBittorrent"] $ws15
 	assign [class="Mailspring"] $ws16
+	assign [class="Protonmail Desktop (unofficial)"] $ws16
 	assign [class="Blueberry.py"] $ws17
 
 	assign [class="Lutris"] $ws11
