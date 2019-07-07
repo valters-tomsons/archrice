@@ -259,6 +259,7 @@
 
 	assign [class="Lutris"] $ws11
 	assign [class="Steam"] $ws12
+	assign [instance="Steam"] $ws12
 	assign [instance="origin.exe"] $ws12
 	assign [instance="epicgameslauncher.exe"] $ws12
 
