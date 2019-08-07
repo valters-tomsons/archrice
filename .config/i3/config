@@ -149,7 +149,7 @@
 	floating_modifier Mod4
 
 # start a terminal
-	bindsym Mod4+Return exec --no-startup-id st -f "Roboto Mono:size=14" fish 
+	bindsym Mod4+Return exec --no-startup-id st -f "Roboto Mono:size=14"
 
 # kill focused window
 	bindsym Mod4+Shift+q kill
