@@ -299,7 +299,7 @@
 	exec_always --no-startup-id compton --config ~/.config/compton.conf
 
 # Autorun
-	exec --no-startup-id discord-canary --start-minimized
+	exec --no-startup-id discord --start-minimized
 	exec --no-startup-id steam-runtime -silent
 	exec --no-startup-id mailspring --background
 	exec --no-startup-id qbittorrent
