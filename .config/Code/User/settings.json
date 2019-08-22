@@ -66,4 +66,5 @@
     "debug.allowBreakpointsEverywhere": true,
     "rust-client.updateOnStartup": true,
     "rust.all_features": true,
+    "explorer.autoReveal": false,
 }
