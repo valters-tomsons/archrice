@@ -36,7 +36,7 @@
     "gitlens.hovers.enabled": false,
     "gitlens.statusBar.enabled": false,
 
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "window.titleBarStyle": "custom",
     
     "terminal.explorerKind": "external",
@@ -52,7 +52,11 @@
     "files.exclude": {
         "**/.vscode": true,
         "**/bin": true,
-        "**/obj": true
+        "**/obj": true,
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
     },
     "vim.useCtrlKeys": false,
     "omnisharp.useGlobalMono": "never",
@@ -67,4 +71,6 @@
     "rust-client.updateOnStartup": true,
     "rust.all_features": true,
     "explorer.autoReveal": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 }
