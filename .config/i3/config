@@ -36,12 +36,8 @@
 # Names for attached monitors
 
 	#R9 380 Mesa
-	#set $first "HDMI-A-0"
-	#set $second "DisplayPort-0"
-	
-	#GTX 1060 stinky
-	set $first "HDMI-0"
-	set $second "DP-0"
+	set $first "DisplayPort-0"
+	set $second "HDMI-A-0"
 
 # Audio Device ALSA index
 	set $audiodevice "alsa_output.pci-0000_00_14.2.analog-stereo"
@@ -291,6 +287,8 @@
 	for_window [instance="origin.exe"] floating enable
 	for_window [instance="bfvob.exe"] fullscreen enable
 	assign [class="Wine"] $ws5
+	assign [class="explorer.exe"] $ws5
+	assign [class="batmanac.exe"] $ws5
 
 # Disable screensaver
 	exec --no-startup-id xset s off

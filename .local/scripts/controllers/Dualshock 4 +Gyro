@@ -1,2 +1,3 @@
 #!/bin/sh
+# https://github.com/TheDrHax/ds4drv-cemuhook
 python -m ds4drv --hidraw --udp --udp-remap-buttons

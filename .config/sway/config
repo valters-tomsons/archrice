@@ -4,8 +4,8 @@
 # For documentation use `man 5 sway`
 
 # Names for attached monitors
-	set $primary "Goldstar Company Ltd LG IPS FULLHD 0x00000101"
-	set $second "Samsung Electric Company SyncMaster H9LQ110562"
+	set $primary "DP-1"
+	set $second "HDMI-A-1"
 
 # Audio Device name
 	set $audiodevice "alsa_output.pci-0000_00_14.2.analog-stereo"
