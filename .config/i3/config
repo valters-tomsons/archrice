@@ -276,6 +276,7 @@
 	assign [class="Dirt4"] $ws5
 	assign [class="underlords"] $ws5
 	assign [class="arma3.x86_64"] $ws5
+	assign [class="ShadowOfTheTombRaider"] $ws5
 
 	#Unity Games
 	assign [class="EtG.x86_64"] $ws5
