@@ -38,5 +38,9 @@
   {
     "ProcessName": "Titanfall2.exe",
     "Description": "Titanfall 2"
+  },
+  {
+    "ProcessName": "ShadowOfTheTombRaider",
+    "Description": "Shadow Of The Tomb Raider"
   }
 ]
