@@ -296,7 +296,7 @@
 	exec --no-startup-id xset -dpms
 
 # Display compositor
-	exec_always --no-startup-id compton --config ~/.config/compton.conf
+	exec_always --no-startup-id picom
 
 # Autorun
 	exec --no-startup-id discord --start-minimized
