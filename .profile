@@ -9,4 +9,3 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # scripts directory
 export PATH="$HOME/.local/scripts:$PATH"
-
