@@ -277,6 +277,7 @@
 	assign [class="underlords"] $ws5
 	assign [class="arma3.x86_64"] $ws5
 	assign [class="ShadowOfTheTombRaider"] $ws5
+	assign [class="hl2_linux"] $ws5
 
 	#Unity Games
 	assign [class="EtG.x86_64"] $ws5
@@ -302,4 +303,4 @@
 	exec --no-startup-id qbittorrent
 	exec --no-startup-id blueberry-tray
 	exec --no-startup-id /home/faith/.local/bin/spotify
-	exec --no-startup-id systemctl --user start dynperf.service
+	exec --no-startup-id /opt/dynperf/dynperf-server

@@ -52,7 +52,11 @@
       "Description": "Shadow of the Tomb Raider"
     },
     {
-      "ProcessName": "starwarsjedifallenorder.exe",
-      "Description": "Star Wars Jedi: Fallen Order"
+      "ProcessName": "HeavyRain.exe",
+      "Description": "Heavy Rain"
+    },
+    {
+      "ProcessName": "Gwent.exe",
+      "Description": "Gwent"
     }
   ]
