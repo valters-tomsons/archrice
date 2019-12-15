@@ -39,6 +39,7 @@
     "window.zoomLevel": 0,
     "window.titleBarStyle": "custom",
     
+    "terminal.integrated.shell.linux" : "/bin/fish",
     "terminal.explorerKind": "external",
     "terminal.external.linuxExec": "xterm",
     "explorer.confirmDragAndDrop": false,
@@ -75,4 +76,5 @@
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "C_Cpp.workspaceSymbols": "All",
     "omnisharp.enableRoslynAnalyzers": true,
+    "editor.suggest.maxVisibleSuggestions": 10,
 }
