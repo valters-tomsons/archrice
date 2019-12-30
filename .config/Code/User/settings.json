@@ -69,6 +69,15 @@
             "commands": [
                 "workbench.action.closeActiveEditor"
             ]
+        },
+        {
+            "before": [
+                "<C-b>"
+            ],
+            "commands": 
+            [
+                "workbench.action.toggleSidebarVisibility"
+            ]
         }
     ],
 
