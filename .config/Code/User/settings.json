@@ -59,7 +59,19 @@
         "**/.settings": true,
         "**/.factorypath": true
     },
-    "vim.useCtrlKeys": false,
+
+    "vim.useCtrlKeys": true,
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "<C-w>"
+            ],
+            "commands": [
+                "workbench.action.closeActiveEditor"
+            ]
+        }
+    ],
+
     "omnisharp.useGlobalMono": "never",
     "materialTheme.accent": "Pink",
     "breadcrumbs.enabled": true,
@@ -77,4 +89,7 @@
     "C_Cpp.workspaceSymbols": "All",
     "omnisharp.enableRoslynAnalyzers": true,
     "editor.suggest.maxVisibleSuggestions": 10,
+    "[xml]": {
+        "editor.defaultFormatter": "rogalmic.vscode-xml-complete"
+    },
 }
