@@ -51,7 +51,6 @@
     "csharpfixformat.style.newline.elseCatch": true,
     "csharpfixformat.style.spaces.beforeParenthesis": false,
     "files.exclude": {
-        "**/.vscode": true,
         "**/bin": true,
         "**/obj": true,
         "**/.classpath": true,
@@ -86,7 +85,7 @@
     "breadcrumbs.enabled": true,
     "gitlens.views.fileHistory.enabled": false,
     "gitlens.views.lineHistory.enabled": false,
-    "razor.trace": "Verbose",
+    "razor.trace": "Messages",
     "editor.renderWhitespace": "all",
     "razor.disabled": true,
     "debug.allowBreakpointsEverywhere": true,
@@ -101,4 +100,6 @@
     "[xml]": {
         "editor.defaultFormatter": "rogalmic.vscode-xml-complete"
     },
+    "azurite.debug": true,
+    "C_Cpp.updateChannel": "Insiders",
 }

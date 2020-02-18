@@ -284,10 +284,12 @@
 	assign [class="Clustertruck.x86_64"] $ws5
 	assign [class="fw.x86_64"] $ws5
 	assign [class="ToTheMoon.bin.x86_64"] $ws5
+	assign [class="hollow_knight.x86_64"] $ws5
 
 	#Wine	
 	for_window [instance="origin.exe"] floating enable
 	for_window [instance="bfvob.exe"] fullscreen enable
+	for_window [class="steam_app_17410"] $ws5
 	assign [class="Wine"] $ws5
 	assign [class="explorer.exe"] $ws5
 	assign [class="batmanac.exe"] $ws5

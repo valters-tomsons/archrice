@@ -58,5 +58,13 @@
     {
       "ProcessName": "Gwent.exe",
       "Description": "Gwent"
+    },
+    {
+      "ProcessName": "EpicGamesLauncher.exe",
+      "Description": "Epic Games Launcher"
+    },
+    {
+      "ProcessName": "NMS.exe",
+      "Description": "No Man's Sky"
     }
   ]
