@@ -39,9 +39,6 @@
 	set $first "DisplayPort-0"
 	set $second "HDMI-A-0"
 
-# Audio Device ALSA index
-	set $audiodevice "alsa_output.pci-0000_00_14.2.analog-stereo"
-
 # Client Colors
 	set $focused_border		 "#E80C88"
 	set $focused_inactive_border	 "#767676"
@@ -131,9 +128,9 @@
 	bindsym Mod4+Shift+F10 move container to workspace $ws20
 
 # Audio Volume controls
-	bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $audiodevice +5%
-	bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume $audiodevice -5%
-	bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute $audiodevice toggle
+	bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q sset Master 5%+
+	bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q sset Master 5%-
+	bindsym XF86AudioMute exec --no-startup-id amixer -D pulse set Master 1+ toggle 
 
 # Media player controls
 	bindsym XF86AudioPlay exec --no-startup-id playerctl play
