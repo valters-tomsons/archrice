@@ -42,5 +42,9 @@
   {
     "ProcessName": "ShadowOfTheTombRaider",
     "Description": "Shadow Of The Tomb Raider"
+  },
+  {
+    "ProcessName": "DOOMEternalx64vk.exe",
+    "Description": "DOOM Eternal"
   }
 ]

@@ -102,4 +102,6 @@
     },
     "azurite.debug": true,
     "C_Cpp.updateChannel": "Insiders",
+    "vim.useSystemClipboard": true,
+    "omnisharp.path": "latest",
 }

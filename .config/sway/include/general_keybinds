@@ -6,7 +6,7 @@
 	bindsym Mod4+Shift+c reload
 
 # Launch terminal
-	bindsym Mod4+Return exec st -f "Roboto Mono:size=12" 
+	bindsym Mod4+Return exec st -f "SF Mono:size=13" 
 
 # Sound Volume controls
 	bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $audiodevice +5%

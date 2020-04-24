@@ -45,6 +45,7 @@
         #Unity Games
         assign [class="EtG.x86_64"] $ws5
         assign [class="Clustertruck.x86_64"] $ws5
+	assign [class="Overcooked2.x86_64"] $ws5
 
         #Wine
         for_window [instance="origin.exe"] floating enable

@@ -2,7 +2,7 @@
 
 {
     "layer": "top",
-    "height": 16,
+    "height": 15,
     "modules-left": ["sway/workspaces", "sway/mode"],
     "modules-center": ["clock", "custom/controllerbattery"],
     "modules-right": ["cpu", "memory", "pulseaudio", "tray"],
@@ -41,7 +41,7 @@
 	    "format": "{}",
 	    "interval": 3,
 	    "escape": true,
-	    "exec": "controllerbattery",
+	    "exec": "/home/faith/.local/bin/controllerbattery",
 	    "on-click-right": "bt-device -d \"Wireless Controller\""
     }
 
