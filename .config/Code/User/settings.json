@@ -104,4 +104,5 @@
     "C_Cpp.updateChannel": "Insiders",
     "vim.useSystemClipboard": true,
     "omnisharp.path": "latest",
+    "browser-preview.format": "png",
 }
