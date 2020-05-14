@@ -1,0 +1,8 @@
+#!/bin/bash
+outputIndex=$(pacmd list-sinks | grep -E 'name:' | rofi -dmenu -format i)
+if [[ -z "$outputIndex" ]]; then
+	echo "No index selected, aborting"
+	exit 1
+fi
+pacmd set-default-sink $outputIndex
+pacmd list-sink-inputs | awk '/index:/{print $2}' | xargs -r -I{} pacmd move-sink-input {} $outputIndex

@@ -138,6 +138,9 @@
 	bindsym XF86AudioNext exec --no-startup-id playerctl next
 	bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 
+# Rotate Right Monitor
+ 	bindsym Scroll_Lock exec --no-startup-id ~/.local/scripts/toggle-rotate
+
 # use Mouse+Mod4 to drag floating windows to their wanted position
 	floating_modifier Mod4
 
@@ -249,7 +252,6 @@
 	assign [class="Lutris"] $ws11
 	assign [class="Steam"] $ws12
 	assign [instance="Steam"] $ws12
-	assign [instance="origin.exe"] $ws12
 	assign [instance="epicgameslauncher.exe"] $ws12
 
 	assign [class="discord"] $ws19
