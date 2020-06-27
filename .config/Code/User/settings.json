@@ -105,4 +105,5 @@
     "vim.useSystemClipboard": true,
     "omnisharp.path": "latest",
     "browser-preview.format": "png",
+    "python.jediEnabled": false,
 }

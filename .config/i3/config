@@ -226,7 +226,7 @@
 	}
 
 # Screenshot Script 
-	bindsym --release Print exec --no-startup-id /home/faith/.local/scripts/screenshot
+	bindsym --release Print exec --no-startup-id /home/faith/.config/rofi/scripts/screenshot.sh
 
 # Force edge borders
 	for_window [class="^.*"] border pixel 1
@@ -245,11 +245,9 @@
 	assign [class="Code"] $ws2
 
 	assign [class="qBittorrent"] $ws15
-	assign [class="Mailspring"] $ws16
 	assign [class="Protonmail Desktop (unofficial)"] $ws16
 	assign [class="Blueberry.py"] $ws17
 
-	assign [class="Lutris"] $ws11
 	assign [class="Steam"] $ws12
 	assign [instance="Steam"] $ws12
 	assign [instance="epicgameslauncher.exe"] $ws12
