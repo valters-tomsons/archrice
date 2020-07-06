@@ -1,55 +1,24 @@
 {
-    "git.autofetch": true,
-    "[csharp]": {},
-    "workbench.colorTheme": "Material Theme Palenight High Contrast",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorCustomizations": {
-        "activityBarBadge.background": "#FF4081",
-        "list.activeSelectionForeground": "#FF4081",
-        "list.inactiveSelectionForeground": "#FF4081",
-        "list.highlightForeground": "#FF4081",
-        "scrollbarSlider.activeBackground": "#FF408150",
-        "editorSuggestWidget.highlightForeground": "#FF4081",
-        "textLink.foreground": "#FF4081",
-        "progressBar.background": "#FF4081",
-        "pickerGroup.foreground": "#FF4081",
-        "tab.activeBorder": "#FF4081",
-        "notificationLink.foreground": "#FF4081",
-        "editorWidget.resizeBorder": "#FF4081",
-        "editorWidget.border": "#FF4081",
-        "panelTitle.activeBorder": "#FF4081",
-        "settings.modifiedItemIndicator": "#FF4081",
-        "settings.headerForeground": "#FF4081",
-        "breadcrumb.activeSelectionForeground": "#FF4081",
-        "menu.selectionForeground": "#FF4081",
-        "menubar.selectionForeground": "#FF4081"
-    },
-    "materialTheme.autoApplyIcons": true,
-    "gitlens.advanced.messages": {
-        "suppressShowKeyBindingsNotice": true
-    },
-    "gitlens.defaultDateStyle": "absolute",
-    "gitlens.defaultDateFormat": "D MMMM YYYY HH:mm",
-    "gitlens.historyExplorer.enabled": false,
-    "gitlens.hovers.currentLine.enabled": false,
-    "gitlens.hovers.annotations.enabled": false,
-    "gitlens.hovers.enabled": false,
-    "gitlens.statusBar.enabled": false,
+    "workbench.colorTheme": "BeardedTheme Anthracite",
+    "workbench.iconTheme": "eq-material-theme-icons-darker",
+    "workbench.startupEditor": "newUntitledFile",
 
-    "window.zoomLevel": 0,
-    "window.titleBarStyle": "custom",
-    
     "terminal.integrated.shell.linux" : "/bin/fish",
     "terminal.explorerKind": "external",
-    "terminal.external.linuxExec": "xterm",
-    "explorer.confirmDragAndDrop": false,
-    "workbench.startupEditor": "newUntitledFile",
-    "terminal.integrated.rendererType": "dom",
-    "csharp.format.enable": false,
-    "editor.fontFamily": "'Roboto Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "csharpfixformat.style.braces.onSameLine": false,
-    "csharpfixformat.style.newline.elseCatch": true,
-    "csharpfixformat.style.spaces.beforeParenthesis": false,
+    "terminal.integrated.rendererType": "auto",
+
+    "editor.fontFamily": "'Roboto Mono', 'monospace', 'Droid Sans Fallback'",
+    "editor.renderWhitespace": "all",
+
+    "omnisharp.useGlobalMono": "never",
+    "omnisharp.enableRoslynAnalyzers": true,
+
+    "git.autofetch": true,
+    "window.titleBarStyle": "custom",
+    "breadcrumbs.enabled": true,
+    "explorer.autoReveal": false,
+    "editor.suggest.maxVisibleSuggestions": 10,
+
     "files.exclude": {
         "**/bin": true,
         "**/obj": true,
@@ -59,6 +28,7 @@
         "**/.factorypath": true
     },
 
+    "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
     "vim.normalModeKeyBindings": [
         {
@@ -79,31 +49,4 @@
             ]
         }
     ],
-
-    "omnisharp.useGlobalMono": "never",
-    "materialTheme.accent": "Pink",
-    "breadcrumbs.enabled": true,
-    "gitlens.views.fileHistory.enabled": false,
-    "gitlens.views.lineHistory.enabled": false,
-    "razor.trace": "Messages",
-    "editor.renderWhitespace": "all",
-    "razor.disabled": true,
-    "debug.allowBreakpointsEverywhere": true,
-    "rust-client.updateOnStartup": true,
-    "rust.all_features": true,
-    "explorer.autoReveal": false,
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "C_Cpp.workspaceSymbols": "All",
-    "omnisharp.enableRoslynAnalyzers": true,
-    "editor.suggest.maxVisibleSuggestions": 10,
-    "[xml]": {
-        "editor.defaultFormatter": "rogalmic.vscode-xml-complete"
-    },
-    "azurite.debug": true,
-    "C_Cpp.updateChannel": "Insiders",
-    "vim.useSystemClipboard": true,
-    "omnisharp.path": "latest",
-    "browser-preview.format": "png",
-    "python.jediEnabled": false,
 }
