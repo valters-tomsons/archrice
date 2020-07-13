@@ -151,7 +151,7 @@
 	bindsym Mod4+Shift+q kill
 
 # start rofi application launcher
-	bindsym Mod4+d exec --no-startup-id rofi -show run -config ~/.config/rofi/rofi_full.conf 
+	bindsym Mod4+d exec --no-startup-id rofi -show run -config ~/.config/rofi/rofi_full.conf -theme ~/.config/rofi/themes/slate.rasi 
 
 # start rofi lastpass
 	bindsym Mod4+p exec --no-startup-id rofi -modi lpass:~/Source/rofi-lpass/rofi-lpass -show lpass -theme ~/.config/rofi/themes/purple.rasi
@@ -306,3 +306,4 @@
 	exec --no-startup-id blueberry-tray
 	exec --no-startup-id /home/faith/.local/bin/spotify
 	exec --no-startup-id /opt/dynperf/dynperf-server
+	exec --no-startup-id dunst

@@ -4,11 +4,14 @@
     "workbench.startupEditor": "newUntitledFile",
 
     "terminal.integrated.shell.linux" : "/bin/fish",
+    "terminal.external.linuxExec": "st",
     "terminal.explorerKind": "external",
     "terminal.integrated.rendererType": "auto",
 
     "editor.fontFamily": "'Roboto Mono', 'monospace', 'Droid Sans Fallback'",
     "editor.renderWhitespace": "all",
+    "editor.suggest.maxVisibleSuggestions": 10,
+    "editor.maxTokenizationLineLength": 30000,
 
     "omnisharp.useGlobalMono": "never",
     "omnisharp.enableRoslynAnalyzers": true,
@@ -17,7 +20,7 @@
     "window.titleBarStyle": "custom",
     "breadcrumbs.enabled": true,
     "explorer.autoReveal": false,
-    "editor.suggest.maxVisibleSuggestions": 10,
+    "csharpsortusings.sort.usings.splitGroups": false,
 
     "files.exclude": {
         "**/bin": true,
@@ -49,4 +52,5 @@
             ]
         }
     ],
+    "window.zoomLevel": 0,
 }
