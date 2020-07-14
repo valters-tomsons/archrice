@@ -8,9 +8,8 @@
 	}
 
 # Autorun Scripts
-	exec --no-startup-id discord-canary --start-minimized
+	exec --no-startup-id dunst --start-minimized
+	exec --no-startup-id discord --start-minimized
 	exec --no-startup-id steam-runtime -silent
-	exec --no-startup-id mailspring --background
 	exec --no-startup-id qbittorrent
-	exec --no-startup-id blueberry-tray
 	exec --no-startup-id /home/faith/.local/bin/spotify

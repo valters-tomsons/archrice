@@ -4,10 +4,8 @@
 
 # Applications
 #	bindsym Mod4+d exec rofi -show run -config ~/.config/rofi/rofi_full.conf
-	bindsym Mod4+d exec bemenu-run -b -i -l 5 -p ">" --fn 'Roboto Mono 15' --tf "#FFFFFF" --hf "#C30052" --ff "#47B34C"
-
-# Lastpass Vault
-	bindsym Mod4+p exec rofi -modi lpass:~/Source/rofi-lpass/rofi-lpass -show lpass -theme ~/.config/rofi/themes/purple.rasi
+#	bindsym Mod4+d exec bemenu-run -b -i -l 5 -p ">" --fn 'Roboto Mono 15' --tf "#FFFFFF" --hf "#C30052" --ff "#47B34C"
+	bindsym Mod4+d exec rofi -show run -theme themes/slate.rasi
 
 # Source Projects
 	bindsym Mod4+o exec --no-startup-id ~/.local/scripts/list-projects
