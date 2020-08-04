@@ -1,5 +1,4 @@
 {
-    "workbench.colorTheme": "BeardedTheme Arc",
     "workbench.iconTheme": "eq-material-theme-icons-darker",
     "workbench.startupEditor": "newUntitledFile",
 
@@ -15,6 +14,12 @@
 
     "omnisharp.useGlobalMono": "never",
     "omnisharp.enableRoslynAnalyzers": true,
+
+    "powershell.integratedConsole.showOnStartup": false,
+    "powershell.integratedConsole.suppressStartupBanner": true,
+    "powershell.promptToUpdatePowerShell": false,
+
+    "rga.path": "/home/faith/Downloads/radeon-gpu-analyzer/rga",
 
     "git.autofetch": true,
     "window.titleBarStyle": "custom",
@@ -53,4 +58,7 @@
         }
     ],
     "window.zoomLevel": 0,
+    "mesonbuild.configureOnOpen": true,
+    "git.enableCommitSigning": true,
+    "cmake.configureOnOpen": true,
 }
