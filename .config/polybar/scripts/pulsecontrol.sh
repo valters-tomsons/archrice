@@ -19,7 +19,7 @@ SINK_BLACKLIST=(
 # Maps PulseAudio sink names to human-readable names
 declare -A SINK_NICKNAMES
 SINK_NICKNAMES["alsa_output.pci-0000_00_14.2.analog-stereo"]="Speakers"
-SINK_NICKNAMES["alsa_output.usb-C-Media_Electronics_Inc._USB_Multimedia_Audio_Device-00.iec958-stereo"]="USB"
+SINK_NICKNAMES["alsa_output.usb-C-Media_Electronics_Inc._USB_Multimedia_Audio_Device-00.iec958-stereo"]="Headphones"
 SINK_NICKNAMES["alsa_output.pci-0000_01_00.1.hdmi-stereo-extra4"]="HDMI"
 SINK_NICKNAMES["bluez_sink.F4_BC_DA_66_3C_67.headset_head_unit"]="Bluetooth"
 
