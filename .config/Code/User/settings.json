@@ -10,7 +10,7 @@
     "editor.fontFamily": "'Roboto Mono', 'monospace', 'Droid Sans Fallback'",
     "editor.renderWhitespace": "all",
     "editor.suggest.maxVisibleSuggestions": 10,
-    "editor.maxTokenizationLineLength": 30000,
+    "editor.maxTokenizationLineLength": 60000,
 
     "omnisharp.useGlobalMono": "never",
     "omnisharp.enableRoslynAnalyzers": true,
@@ -61,4 +61,7 @@
     "mesonbuild.configureOnOpen": true,
     "git.enableCommitSigning": true,
     "cmake.configureOnOpen": true,
+    "timeline.excludeSources": [
+        "git-history"
+    ],
 }

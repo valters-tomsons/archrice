@@ -288,10 +288,12 @@
 	for_window [instance="origin.exe"] floating enable
 	for_window [instance="bfvob.exe"] fullscreen enable
 	for_window [class="steam_app_17410"] $ws5
+	for_window [class="steam_app_365590"] $ws5
 	assign [class="Wine"] $ws5
 	assign [class="explorer.exe"] $ws5
 	assign [class="batmanac.exe"] $ws5
 	assign [class="steam_app_252950"] $ws5
+	assign [class="geforcenowstreamer.exe"] $ws5
 
 # Disable screensaver
 	exec --no-startup-id xset s off

@@ -22,10 +22,7 @@ timestamp=$(date +'%d-%m-%Y_%T')
 case $chosen in 
 	$screen)
 		# sleep 1;
-		scrot 'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'export file=$f';
-		echo $file;
-		# mv $f $(xdg-user-dir PICTURES)/Screenshots;
-	       	# copyimage $(xdg-user-dir PICTURES)/Screenshots/$f
+		scrot 'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES)/Screenshots;'
 		;;
 	$area)
 		scrot -s 'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES)/Screenshots ;
