@@ -64,4 +64,19 @@
     "timeline.excludeSources": [
         "git-history"
     ],
+    "shellLauncher.shells.linux": [
+
+        {
+            "shell": "/bin/pwsh",
+            "label": "pwsh"
+        },
+        {
+            "shell": "/bin/bash",
+            "label": "bash"
+        },
+        {
+            "shell": "/bin/fish",
+            "label": "fish"
+        }
+    ],
 }
