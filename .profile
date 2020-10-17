@@ -10,3 +10,5 @@ export PATH="$HOME/.local/bin:$PATH"
 # scripts directory
 export PATH="$HOME/.local/scripts:$PATH"
 export MANGOHUD=1
+
+export MGFXC_WINE_PATH=/home/faith/.winemonogame
