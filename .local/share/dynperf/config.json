@@ -1,6 +1,0 @@
-{
-  "TargetListFilePath": "/home/faith/.local/share/dynperf/targets.json",
-  "KillProcess": "picom",
-  "RestoreCommand": "picom",
-  "ScanIntervalMs": 1500
-}
