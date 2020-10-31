@@ -57,7 +57,7 @@
             ]
         }
     ],
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "mesonbuild.configureOnOpen": true,
     "git.enableCommitSigning": true,
     "cmake.configureOnOpen": true,

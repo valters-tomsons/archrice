@@ -24,5 +24,14 @@
         "key": "ctrl+5",
         "command": "workbench.action.terminal.focusAtIndex5",
         "when": "terminalFocus"
+    },
+    {
+        "key": "f5",
+        "command": "code-runner.run",
+        "when": "editorLangId == 'powershell'"
+    },
+    {
+        "key": "ctrl+alt+n",
+        "command": "-code-runner.run"
     }
 ]
