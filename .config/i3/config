@@ -287,6 +287,8 @@
 	#Wine	
 	for_window [instance="origin.exe"] floating enable
 	for_window [instance="bfvob.exe"] fullscreen enable
+	for_window [instance="bf3.exe"] fullscreen enable
+	for_window [instance="photoshop.exe"] floating enable
 	for_window [class="steam_app_17410"] $ws5
 	for_window [class="steam_app_365590"] $ws5
 	assign [class="Wine"] $ws5
