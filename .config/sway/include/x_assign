@@ -50,6 +50,7 @@
         #Wine
         for_window [instance="origin.exe"] floating enable
         for_window [instance="bfvob.exe"] fullscreen enable
+        for_window [instance="steam_app_1238810"] fullscreen enable
         assign [class="Wine"] $ws5
 
 # Additional Flags 

@@ -5,7 +5,7 @@
     "height": 15,
     "modules-left": ["sway/workspaces", "sway/mode"],
     "modules-center": ["clock", "custom/controllerbattery"],
-    "modules-right": ["cpu", "memory", "pulseaudio", "tray"],
+    "modules-right": ["cpu", "memory", "custom/pulsecontrol", "pulseaudio", "tray"],
 
     "sway/workspaces": {
 	    "disable-scroll": true,
@@ -43,6 +43,12 @@
 	    "escape": true,
 	    "exec": "/home/faith/.local/bin/controllerbattery",
 	    "on-click-right": "bt-device -d \"Wireless Controller\""
+    },
+    "custom/pulsecontrol": {
+	    "format": "{}",
+	    "escape": true,
+	    "exec": "pulsecontrol listen",
+	    "exec-on-event": true,
+	    "on-click": "pulsecontrol next-sink"
     }
-
 }

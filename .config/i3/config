@@ -285,28 +285,33 @@
 	assign [class="Overcooked2.x86_64"] $ws5
 
 	#Wine	
-	for_window [instance="origin.exe"] floating enable
+	for_window [instance="^origin.exe$"] floating enable, fullscreen disable
+
 	for_window [instance="bfvob.exe"] fullscreen enable
 	for_window [instance="bf3.exe"] fullscreen enable
-	for_window [instance="photoshop.exe"] floating enable
+	assign [class="batmanac.exe"] $ws5
+	assign [class="geforcenowstreamer.exe"] $ws5
+
 	for_window [class="steam_app_17410"] $ws5
 	for_window [class="steam_app_365590"] $ws5
-	assign [class="Wine"] $ws5
-	assign [class="explorer.exe"] $ws5
-	assign [class="batmanac.exe"] $ws5
 	assign [class="steam_app_252950"] $ws5
-	assign [class="geforcenowstreamer.exe"] $ws5
+
+	assign [class="Wine"] $ws5
+	for_window [instance="photoshop.exe"] floating enable
+	assign [class="explorer.exe"] $ws5
+
 
 # Disable screensaver
 	exec --no-startup-id xset s off
 	exec --no-startup-id xset -dpms
 
 # Autorun
-	exec --no-startup-id discord --start-minimized
-	exec --no-startup-id steam-runtime -silent
-	exec --no-startup-id mailspring --background
-	exec --no-startup-id qbittorrent
-	exec --no-startup-id blueberry-tray
-	exec --no-startup-id /home/faith/.local/bin/spotify
 	exec --no-startup-id dynperf
 	exec --no-startup-id dunst
+
+	exec --no-startup-id discord --start-minimized
+	exec --no-startup-id steam-runtime -silent
+	exec --no-startup-id /home/faith/.local/bin/spotify
+
+	exec --no-startup-id qbittorrent
+	exec --no-startup-id blueberry-tray
