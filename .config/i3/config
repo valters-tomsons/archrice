@@ -285,7 +285,8 @@
 	assign [class="Overcooked2.x86_64"] $ws5
 
 	#Wine	
-	for_window [instance="^origin.exe$"] floating enable, fullscreen disable
+	for_window [instance="origin.exe"] floating enable, fullscreen disable
+	for_window [instance="steam_app_1182480"] floating enable, fullscreen disable
 
 	for_window [instance="bfvob.exe"] fullscreen enable
 	for_window [instance="bf3.exe"] fullscreen enable
@@ -296,9 +297,10 @@
 	for_window [class="steam_app_365590"] $ws5
 	assign [class="steam_app_252950"] $ws5
 
-	assign [class="Wine"] $ws5
 	for_window [instance="photoshop.exe"] floating enable
 	assign [class="explorer.exe"] $ws5
+
+	assign [class="Wine"] $ws5
 
 
 # Disable screensaver
