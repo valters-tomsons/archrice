@@ -1,0 +1,19 @@
+#!/bin/bash
+
+if [ -d .git ]; then
+	echo "Found .git"
+  else
+	echo "Not a git directory, exiting..."
+	exit
+fi;
+
+
+echo "Caution, this will remove all of your changes to this repository."
+echo "You have been warned"
+read -r -p "Enter master git url: "  masterRepo
+
+git remote add upstream "$masterRepo"
+git fetch upstream
+git checkout master
+git reset --hard upstream/master  
+git push origin master --force 
