@@ -5,7 +5,7 @@
 	exec --no-startup-id /home/faith/.local/scripts/fixmonitors
 
 # Set up wallpapers
-	exec_always --no-startup-id feh --bg-scale ~/Pictures/System/Primary.png --bg-fill ~/Pictures/System/Secondary.png 
+	exec_always --no-startup-id feh --bg-scale ~/Pictures/.System/Primary.png --bg-fill ~/Pictures/.System/Secondary.png 
 
 # [re]start polybar
 	exec_always --no-startup-id ~/.config/polybar/launch.sh
@@ -34,8 +34,6 @@
 	set $ws20 "20:F10"
 
 # Names for attached monitors
-
-	#R9 380 Mesa
 	set $first "DisplayPort-0"
 	set $second "HDMI-A-0"
 
@@ -128,9 +126,9 @@
 	bindsym Mod4+Shift+F10 move container to workspace $ws20
 
 # Audio Volume controls
-	bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q sset Master 5%+
-	bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q sset Master 5%-
-	bindsym XF86AudioMute exec --no-startup-id amixer -D pulse set Master 1+ toggle 
+	bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer -i 5
+	bindsym XF86AudioLowerVolume exec --no-startup-id pamixer -d 5
+	bindsym XF86AudioMute exec --no-startup-id pamixer --toggle-mute
 
 # Media player controls
 	bindsym XF86AudioPlay exec --no-startup-id playerctl play
@@ -145,7 +143,10 @@
 	floating_modifier Mod4
 
 # start a terminal
-	bindsym Mod4+Return exec --no-startup-id st -f "SF Mono:size=13"
+	bindsym Mod4+Return exec --no-startup-id st -f "Roboto Mono:size=13"
+
+# Kill selected window
+	bindsym --release Ctrl+Shift+Delete exec --no-startup-id xkill
 
 # kill focused window
 	bindsym Mod4+Shift+q kill
@@ -155,20 +156,6 @@
 
 # start rofi window
 	bindsym Mod4+w exec --no-startup-id rofi -show window -theme ~/.config/rofi/themes/slate.rasi
-
-# start rofi lastpass
-	bindsym Mod4+p exec --no-startup-id rofi -modi lpass:~/Source/rofi-lpass/rofi-lpass -show lpass -theme ~/.config/rofi/themes/purple.rasi
-
-# start rofi project list
-	bindsym Mod4+o exec --no-startup-id ~/.local/scripts/list-projects
-
-# start rofi emoji-selector
-	bindsym Mod4+i exec --no-startup-id ~/Source/emoji-selector/emoji-selector
-
-# google keep notes
-	bindsym Mod4+n exec --no-startup-id google-keep-desktop
-
-	bindsym --release Ctrl+Shift+Delete exec --no-startup-id xkill
 
 # change focus:
 	bindsym Mod4+Left focus left
@@ -191,10 +178,6 @@
 
 # enter fullscreen
 	bindsym Mod4+f fullscreen toggle
-
-# change layout 
-	# bindsym Mod4+w layout tabbed
-	# bindsym Mod4+e layout toggle split
 
 # toggle tiling / floating
 	bindsym Mod4+Shift+space floating toggle
@@ -314,11 +297,14 @@
 
 # Autorun
 	exec --no-startup-id dynperf
+	#exec_always --no-startup-id picom
 	exec --no-startup-id dunst
 
 	exec --no-startup-id discord --start-minimized
 	exec --no-startup-id steam-runtime -silent
-	exec --no-startup-id /home/faith/.local/bin/spotify
+	exec --no-startup-id spotify-wm
 
-	exec --no-startup-id qbittorrent
 	exec --no-startup-id blueberry
+
+# Fibonachi Splitting
+for_window [class=".*"] split toggle
