@@ -1,0 +1,4 @@
+#!/bin/sh
+#Requires https://github.com/epigramx/ds4drv-cemuhook
+
+ds4drv --hidraw --udp --udp-remap-buttons

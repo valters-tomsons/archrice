@@ -1,0 +1,21 @@
+#!/bin/bash
+
+case "${1:-}" in
+  (""|list)
+    pactl list sinks |
+      grep -E 'Sink #|Name:'
+    ;;
+  ([0-9]*)
+    echo switching default
+    pactl set-default-sink $1 ||
+      echo failed
+    echo switching applications
+    pactl list sink-inputs |
+      awk '/index:/{print $2}' |
+      xargs -r -I{} pactl move-sink-input {} $1 ||
+        echo failed
+    ;;
+  (*)
+    echo "Usage: $0 [|list|<sink name to switch to>]"
+    ;;
+esac
