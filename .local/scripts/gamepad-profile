@@ -1,3 +1,0 @@
-#!/bin/sh
-profile=$(ls -1a "$HOME/.local/scripts/controllers/" | bemenu -b -i -f -l 4 -p "Select Controller Profile:" --fn "Roboto Mono 12")
-st -f "Roboto Mono:size=14" -e "$HOME/.local/scripts/controllers/$profile"

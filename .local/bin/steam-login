@@ -1,2 +1,0 @@
-#!/bin/sh
-dotnet ~/.steam-autologin/steam-autologin.dll "$1" native

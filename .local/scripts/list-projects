@@ -1,2 +1,0 @@
-#!/bin/sh
-ls -1a /home/faith/Source/ | grep "[Aa-Zz]" | bemenu -b -i -l 10 -p "Select Project:" --scrollbar always --fn 'Roboto Mono 12' | awk '{print "/home/faith/Source/" $1}' | xargs -r code

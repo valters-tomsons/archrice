@@ -1,2 +1,0 @@
-#!/bin/sh
-swaymsg -t get_tree | grep '"focused": true' -a20 | grep output | tr ': ' '\n' | tail -n1 | tr -d ',' | tr -d '"'
