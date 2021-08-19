@@ -79,4 +79,5 @@
             "label": "fish"
         }
     ],
+    "files.autoGuessEncoding": true
 }
