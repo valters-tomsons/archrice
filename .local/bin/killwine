@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Forcefully ends all wine processes
+kill -9 $(ps -ef | grep -E -i '(wine|processid|\.exe)' | grep -v -E '(grep|killwine)' | awk '{print $2}')
